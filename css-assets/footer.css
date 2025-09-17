@@ -1,0 +1,260 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px 0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #9b7bd1 0%, #b695d4 100%);
+            color: white;
+            padding: 40px 0 30px;
+            min-height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            align-items: start;
+        }
+
+        .brand-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .logo-placeholder {
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 4px;
+            /* Replace with your logo image */
+            /* Example: background-image: url('path/to/your/logo.png'); */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+        }
+
+        .brand-text h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .brand-text p {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .social-placeholder {
+            width: 16px;
+            height: 16px;
+            background: white;
+            border-radius: 2px;
+            /* Replace with your social media icons */
+            /* Example: background-image: url('path/to/facebook-icon.png'); */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #f0e6ff;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            opacity: 1;
+        }
+
+        .courses-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .contact-info div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-info div > div {
+            flex: 1;
+        }
+
+        .contact-info div > div > div {
+            margin-bottom: 3px;
+        }
+
+        .contact-info svg {
+            width: 16px;
+            height: 16px;
+            fill: #f0e6ff;
+            flex-shrink: 0;
+        }
+
+        .location-icon {
+            background: #f0e6ff;
+            /* Replace with location/map pin icon */
+            /* Example: background-image: url('path/to/location-icon.png'); */
+        }
+
+        .phone-icon {
+            background: #f0e6ff;
+            /* Replace with phone icon */
+            /* Example: background-image: url('path/to/phone-icon.png'); */
+        }
+
+        .email-icon {
+            background: #f0e6ff;
+            /* Replace with email icon */
+            /* Example: background-image: url('path/to/email-icon.png'); */
+        }
+
+        .icon-placeholder {
+            width: 16px;
+            height: 16px;
+            background: #f0e6ff;
+            border-radius: 2px;
+            flex-shrink: 0;
+            /* Replace this placeholder with your image */
+            /* Example: background-image: url('path/to/your/clock-icon.png'); */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .contact-info a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 25px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .copyright {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .courses-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                order: -1;
+            }
+        }
+   
