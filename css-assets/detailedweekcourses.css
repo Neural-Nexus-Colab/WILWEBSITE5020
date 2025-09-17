@@ -1,0 +1,705 @@
+/*
+    Code Attribution
+    Title: Web Development (Introduction) [WEDE5020]
+    Author: The Independent Institute of Education (Pty) Ltd
+    Date Accessed: 13 August 2025
+    Date Created: 2025
+    Availability: https://advtechonline.sharepoint.com/...
+*/
+
+/* General Styles - Can be used across all pages */
+/* CSS Reset for consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8d5f2 0%, #c8a8e0 50%, #a685c7 100%);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header styling with navigation and branding */
+header {
+    background: linear-gradient(135deg, #8b5fbf, #a474d1);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Navigation container with flexbox layout */
+header > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Company logo and branding */
+header > div > div:first-child {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Logo icon styling */
+header > div > div:first-child > div {
+    background: white;
+    color: #8b5fbf;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Navigation menu styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Authentication buttons container */
+header > div > div:last-child {
+    display: flex;
+    gap: 15px;
+}
+
+/* Sign in and register button styling */
+header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+header button:first-child {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+header button:last-child {
+    background: white;
+    color: #8b5fbf;
+    font-weight: bold;
+}
+
+/* Main content container with max-width for readability */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Detailed Course Page Specific Styles */
+/* Hero section with page title and description */
+main > section:first-child {
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+main > section:first-child h1 {
+    font-size: 48px;
+    color: #6b46c1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main > section:first-child p {
+    font-size: 20px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Course cards container */
+main > section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Individual course card styling */
+main > section:nth-child(2) > div {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main > section:nth-child(2) > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Course title styling */
+main > section:nth-child(2) h3 {
+    font-size: 32px;
+    color: #6b46c1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Course meta information container */
+main > section:nth-child(2) > div > div:first-of-type {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+main > section:nth-child(2) > div > div:first-of-type span {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    color: #0c4a6e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Course section headings */
+main > section:nth-child(2) h4 {
+    font-size: 20px;
+    color: #6b46c1;
+    margin: 25px 0 15px 0;
+    font-weight: bold;
+}
+
+/* Course description text */
+main > section:nth-child(2) p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Course outcomes list styling */
+main > section:nth-child(2) ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+main > section:nth-child(2) li {
+    color: #666;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+main > section:nth-child(2) li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Course footer with pricing and button */
+main > section:nth-child(2) > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 2px solid #f0f0f0;
+}
+
+/* Course pricing display */
+main > section:nth-child(2) > div > div:last-child span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6b46c1;
+}
+
+/* Calculate cost button styling */
+main > section:nth-child(2) button {
+    background: linear-gradient(135deg, #8b5fbf, #a474d1);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+main > section:nth-child(2) button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 95, 191, 0.4);
+}
+
+/* Why Choose section styling */
+main > section:nth-child(3) {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+main > section:nth-child(3) h2 {
+    color: #6b46c1;
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+main > section:nth-child(3) p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Benefits list styling */
+main > section:nth-child(3) ul {
+    list-style: none;
+}
+
+main > section:nth-child(3) li {
+    color: #666;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+main > section:nth-child(3) li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Visual placeholder styling */
+main > section:nth-child(3) > div:last-child {
+    background: linear-gradient(135deg, #e8d5f2, #c8a8e0);
+    border-radius: 15px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #8b5fbf;
+}
+
+main > section:nth-child(3) > div:last-child:after {
+    content: "🎓";
+}
+
+/* Features section grid layout */
+main > section:nth-child(4) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Individual feature card styling */
+main > section:nth-child(4) > div {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main > section:nth-child(4) > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+main > section:nth-child(4) h3 {
+    color: #6b46c1;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Feature icons using pseudo-elements */
+main > section:nth-child(4) > div:first-child h3:before {
+    content: "📅";
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) > div:nth-child(2) h3:before {
+    content: "💼";
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) > div:nth-child(3) h3:before {
+    content: "💰";
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Other options section styling */
+main > section:nth-child(5) {
+    background: linear-gradient(135deg, #c8a8e0, #a685c7);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main > section:nth-child(5) > p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/* Options grid layout */
+main > section:nth-child(5) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Individual option card styling */
+main > section:nth-child(5) > div > div {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+main > section:nth-child(5) > div > div:hover {
+    transform: translateY(-5px);
+}
+
+main > section:nth-child(5) h3 {
+    color: #6b46c1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(5) > div p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Option buttons styling */
+main > section:nth-child(5) button {
+    background: linear-gradient(135deg, #8b5fbf, #a474d1);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+main > section:nth-child(5) button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 95, 191, 0.4);
+}
+
+/* Option icons using pseudo-elements */
+main > section:nth-child(5) > div > div:first-child h3:before {
+    content: "🌟";
+    display: block;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(5) > div > div:nth-child(2) h3:before {
+    content: "🏠";
+    display: block;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(5) > div > div:nth-child(3) h3:before {
+    content: "📊";
+    display: block;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Call-to-action section styling */
+main > section:nth-child(6) {
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+main > section:nth-child(6) h2 {
+    color: #6b46c1;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main > section:nth-child(6) > p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/* CTA buttons container */
+main > section:nth-child(6) > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CTA button styling */
+main > section:nth-child(6) button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+main > section:nth-child(6) button:first-child {
+    background: linear-gradient(135deg, #8b5fbf, #a474d1);
+    color: white;
+}
+
+main > section:nth-child(6) button:not(:first-child) {
+    background: transparent;
+    color: #8b5fbf;
+    border: 2px solid #8b5fbf;
+}
+
+main > section:nth-child(6) button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Footer styling with contact information and links */
+footer {
+    background: linear-gradient(135deg, #6b46c1, #8b5fbf);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+/* Footer content grid layout */
+footer > div:first-child {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* Footer section headings */
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Footer lists styling */
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+/* Footer logo and branding */
+footer > div:first-child > div:first-child > div:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer > div:first-child > div:first-child > div:first-child > div {
+    background: white;
+    color: #6b46c1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Footer description text */
+footer > div:first-child > div:first-child p {
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Social media links container */
+footer > div:first-child > div:first-child > div:last-child {
+    display: flex;
+    gap: 15px;
+}
+
+footer > div:first-child > div:first-child > div:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+footer > div:first-child > div:first-child > div:last-child a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Copyright and legal information section */
+footer > div:last-child {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 30px;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile header adjustments */
+    header > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    /* Mobile main content adjustments */
+    main {
+        padding: 20px 15px;
+    }
+    
+    main > section:first-child h1 {
+        font-size: 36px;
+    }
+    
+    main > section:first-child,
+    main > section:nth-child(2) > div,
+    main > section:nth-child(3),
+    main > section:nth-child(6) {
+        padding: 30px 20px;
+    }
+    
+    /* Mobile why choose section - single column */
+    main > section:nth-child(3) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Mobile features section - single column */
+    main > section:nth-child(4) {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Mobile options section adjustments */
+    main > section:nth-child(5) > div {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Mobile CTA buttons - stack vertically */
+    main > section:nth-child(6) > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Mobile course meta information - stack vertically */
+    main > section:nth-child(2) > div > div:first-of-type {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Mobile course footer - stack vertically */
+    main > section:nth-child(2) > div > div:last-child {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
