@@ -1,22 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering the Nation - 6-Week Courses</title>
-      <link href="css-assets/weekcourses.css" rel="stylesheet">
-</head>
-<body>
+<!--
+    Code Attribution
+    Title: Web Development (Introduction) [WEDE5020]
+    Author: The Independent Institute of Education (Pty) Ltd
+    Date Accessed: 12 September 2025
+    Date Created: 2025
+    Version: Not specified
+    Availability: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true
+-->
+<!DOCTYPE html><!--Lets the browser know which version of html the document uses-->
+<html lang="en"><!--Sets the attribute lang(language) to english-->
+<head><!--Content in the head is used to tell browser important information on the page-->
+    <meta charset="UTF-8"><!-- meta elements contains a variety of different attributes to communicate important information to the browser and charset is an attribute that tells the style of keyboard used to code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport indicates that the browser should not zoom in on the page and should respect any CSS response code and the content allows the website to fit any screen-->
+    <title>Empowering the Nation - 6-Week Courses</title><!-- title is not displayed on the page itself but its what shows on the browser tab and in the search listings on google and other search engines  -->
+      <link href="css-assets/weekcourses.css" rel="stylesheet"> <!--Linking the css file to the html file-->
+    </head>
+    <body><!-- Holds all the content for the display on the page itself-->
     <!-- Header -->
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">
+    <header class="header"><!-- This element(header) holds introductory content like navigation, logos or headings -->
+        <div class="nav-container"> <!-- Div element is a block-level container used to group elements for styling or scripting purposes -->
+<!-- Code Attribution
+    Title: Divs & Spans
+    Author: HTML and CSS Guidebook
+    Date Accessed: 12 September 2025
+    Date published: 2024
+    Availability: https://htmlandcssguidebook.com/html/div-span/
+-->
+            <div class="logo"> <!-- the class attribute allows us to use the css styling we have the css file -->
                 <div class="logo-icon">EN</div>
                 Empowering the Nation
             </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
+            <nav><!--This element (nav) represents a section of a page whose purpose is to provide navigation links-->
+                <ul class="nav-menu"><!-- ul represents an unordered list which is a block element -->
+                    <li><a href="#home">Home</a></li><!-- li element defines a list item and a is an anchor element that creates a hyperlink to other web pages-->
                     <li><a href="#about">About</a></li>
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -24,18 +40,25 @@
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <button class="btn-signin">Sign In</button>
+                <button class="btn-signin">Sign In</button> <!-- button element represents a clickable button -->
                 <button class="btn-register">Register</button>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content"><!-- This element (main) represents the dominant content of the <body> of a document -->
         <!-- Hero Section -->
-        <section class="hero-section">
-            <h1 class="hero-title">6-Week Courses</h1>
-            <p class="hero-subtitle">
+        <section class="hero-section">  <!-- The section element is the most nonspecific of the semantic as it represents a thematically-related section of a page -->
+ <!-- Code Attribution
+    Title: Semantic Elements
+    Author: HTML and CSS Guidebook
+    Date Accessed: 12 September 2025
+    Date published: 2024
+    Availability: https://htmlandcssguidebook.com/html/html5-semantic/#section
+-->
+            <h1 class="hero-title">6-Week Courses</h1> <!-- h1 elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.-->
+            <p class="hero-subtitle"><!-- p element defines a paragraph -->
                 Our short-term courses are designed to provide practical skills in a condensed timeframe. Perfect for those looking to quickly gain new abilities or enhance existing ones.
             </p>
         </section>
@@ -44,9 +67,9 @@
         <section class="courses-grid">
             <div class="course-card">
                 <div class="course-image child-minding"></div>
-                <h3 class="course-title">Child Minding</h3>
+                <h3 class="course-title">Child Minding</h3> <!-- h3 element is the third level heading -->
                 <div class="course-meta">
-                    <span>⏰ 30 Hours</span>
+                    <span>⏰ 30 Hours</span> <!-- span element is an inline container used to mark up a part of a text, or a part of a document -->
                     <span>👥 Beginner Friendly</span>
                 </div>
                 <div class="course-footer">
@@ -129,7 +152,7 @@
 
         <!-- Other Options Section -->
         <section class="other-options">
-            <h2>Explore Our Other Course Options</h2>
+            <h2>Explore Our Other Course Options</h2> <!-- h2 element is the second level heading -->
             <p>Looking for more comprehensive training? Check out our long-term programs.</p>
             
             <div class="options-grid">
@@ -175,7 +198,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer"> <!-- The footer element represents a footer for its nearest sectioning content or sectioning root element -->
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
@@ -184,10 +207,10 @@
                 </div>
                 <p>Dedicated to empowering individuals with development skills and a lifetime fit-building materials!</p>
                 <div class="social-links">
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Instagram">📷</a>
-                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="" title="Twitter">🐦</a>
+                    <a href="" title="Facebook">📘</a>
+                    <a href="" title="Instagram">📷</a>
+                    <a href="" title="LinkedIn">💼</a>
                 </div>
             </div>
 
@@ -205,13 +228,13 @@
             <div class="footer-section">
                 <h3>Our Courses</h3>
                 <ul>
-                    <li><a href="#">Child Minding</a></li>
-                    <li><a href="#">Cooking</a></li>
-                    <li><a href="#">Garden Maintenance</a></li>
-                    <li><a href="#">First Aid</a></li>
-                    <li><a href="#">Sewing</a></li>
-                    <li><a href="#">Landscaping</a></li>
-                    <li><a href="#">Life Skills</a></li>
+                    <li><a href="">Child Minding</a></li>
+                    <li><a href="">Cooking</a></li>
+                    <li><a href="">Garden Maintenance</a></li>
+                    <li><a href="">First Aid</a></li>
+                    <li><a href="">Sewing</a></li>
+                    <li><a href="">Landscaping</a></li>
+                    <li><a href="">Life Skills</a></li>
                 </ul>
             </div>
 
@@ -232,3 +255,20 @@
     </footer>
 </body>
 </html>
+<!-- 
+  - The Independent Institute of Education, 2025. Web Development (Introduction) [WEDE5020]. nt. [online via internal VLE] The Independent Institute of Education. Available at:< https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true > [Accessed Date: 13 August 2025]. 
+
+   - HTML and CSS Guidebook, 2024. Sematic Elements. [online] Available at: < https://htmlandcssguidebook.com/html/html5-semantic/#div > [Accessed 16 August 2025]. 
+
+   - W3Schools, 2024. HTML Footer Tag. [online] Available at: < https://www.w3schools.com/tags/tag_footer.asp > [Accessed 12 September 2025].
+
+   - W3Schools, 2024. HTML div Tag. [online] Available at: < https://www.w3schools.com/tags/tag_div.asp > [Accessed 12 September 2025].
+
+   - W3Schools, 2024. HTML Nav Tag. [online] Available at: < https://www.w3schools.com/tags/tag_nav.asp > [Accessed 12 September 2025].
+
+   - W3Schools, 2024. HTML Header Tag. [online] Available at: < https://www.w3schools.com/tags/tag_header.asp > [Accessed 12 September 2025].
+
+   - W3Schools, 2024. HTML Main Tag. [online] Available at: < https://www.w3schools.com/tags/tag_main.asp > [Accessed 12 September 2025].
+
+   - W3Schools, 2024. HTML Symbols. [online] Available at: < https://www.w3schools.com/html/html_symbols.asp> [Accessed 12 September 2025].
+-->
