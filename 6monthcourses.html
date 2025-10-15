@@ -4,226 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6-Month Professional Courses - Empowering the Nation</title>
-
+    <link href="css-assets/6monthcourses.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-container">
+        <div class="container">
             <div class="logo">
-                <div class="logo-icon">🎓</div>
+                <div class="logo-icon">📚</div>
                 <span>Empowering the Nation</span>
             </div>
-            <nav>
-                <ul class="nav-menu">
-                   <li><a href="homepage.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="weekcourses.html">Courses</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Register</a></li>
-                </ul>
+            <nav class="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link active">Courses</a>
+                <a href="#" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Register</a>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn btn-outline">Sign In</button>
-                <button class="btn btn-primary">Register</button>
+            <div class="header-buttons">
+                <button class="btn-secondary">Sign Up</button>
+                <button class="btn-primary">Login</button>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-container">
-        <!-- Title Section -->
-        <section class="title-section">
-            <div class="breadcrumb">
-                <a href="homepage.html">🏠 Home</a>
-                <span>/</span>
-                <span>6-Month Courses</span>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
             <h1>6-Month Professional Courses</h1>
-            <p class="subtitle">
-                Discover our comprehensive 6-month programs designed to equip professionals with practical 
-                skills that can transform their career prospects and enhance their personal development.
-            </p>
-        </section>
+            <p>Our comprehensive programs are designed to equip you with professional skills that can transform your career prospects and enhance your personal development.</p>
+        </div>
+    </section>
 
-        <!-- Course Grid -->
-        <section class="course-grid">
-            <!-- First Aid Certification -->
-            <div class="course-card">
-                <div class="course-image first-aid">
-                    <div class="course-duration">6 Months</div>
-                </div>
-                <div class="course-content">
-                    <h3 class="course-title">First Aid Certification</h3>
-                    <div class="course-footer">
-                        <div>
-                            <span class="course-price">R1500</span>
-                            <span class="price-label">Per full course</span>
+    <!-- Courses Grid -->
+    <section class="courses">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- First Aid Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="first-aid.jpg" alt="First Aid Certification">
+                    </div>
+                    <div class="course-content">
+                        <h3>First Aid Certification</h3>
+                        <div class="course-meta">
+                            <span class="course-days">📍 131 Days</span>
+                            <span class="course-level">🎓 Beginner Friendly</span>
                         </div>
-                        <button class="course-btn">Enroll Now</button>
+                        <div class="course-duration">6 Months</div>
+                        <div class="course-footer">
+                            <span class="course-price">R1500</span>
+                            <button class="btn-enroll">Calculate Cost</button>
+                        </div>
+                        <p class="course-note">for full course</p>
+                    </div>
+                </div>
+
+                <!-- Professional Sewing -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="sewing.jpg" alt="Professional Sewing">
+                    </div>
+                    <div class="course-content">
+                        <h3>Professional Sewing</h3>
+                        <div class="course-meta">
+                            <span class="course-days">📍 131 Days</span>
+                            <span class="course-level">🎓 Beginner Friendly</span>
+                        </div>
+                        <div class="course-duration">6 Months</div>
+                        <div class="course-footer">
+                            <span class="course-price">R1500</span>
+                            <button class="btn-enroll">Calculate Cost</button>
+                        </div>
+                        <p class="course-note">for full course</p>
+                    </div>
+                </div>
+
+                <!-- Professional Landscaping -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="landscaping.jpg" alt="Professional Landscaping">
+                    </div>
+                    <div class="course-content">
+                        <h3>Professional Landscaping</h3>
+                        <div class="course-meta">
+                            <span class="course-days">📍 131 Days</span>
+                            <span class="course-level">🎓 Beginner Friendly</span>
+                        </div>
+                        <div class="course-duration">6 Months</div>
+                        <div class="course-footer">
+                            <span class="course-price">R1500</span>
+                            <button class="btn-enroll">Calculate Cost</button>
+                        </div>
+                        <p class="course-note">for full course</p>
+                    </div>
+                </div>
+
+                <!-- Life Skills Development -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="life-skills.jpg" alt="Life Skills Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Life Skills Development</h3>
+                        <div class="course-meta">
+                            <span class="course-days">📍 131 Days</span>
+                            <span class="course-level">🎓 Beginner Friendly</span>
+                        </div>
+                        <div class="course-duration">6 Months</div>
+                        <div class="course-footer">
+                            <span class="course-price">R1500</span>
+                            <button class="btn-enroll">Calculate Cost</button>
+                        </div>
+                        <p class="course-note">for full course</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Professional Sewing -->
-            <div class="course-card">
-                <div class="course-image sewing">
-                    <div class="course-duration">6 Months</div>
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <h2>Why Choose Our 6-Month Courses?</h2>
+                    <ul class="features-list">
+                        <li>🎓 Nationally recognized certification upon completion</li>
+                        <li>👤 Industry-experienced instructors with practical knowledge</li>
+                        <li>💼 Job placement assistance and career guidance</li>
+                        <li>🔧 Practical, hands-on training with modern equipment</li>
+                        <li>💳 Flexible payment options and financial assistance available</li>
+                    </ul>
                 </div>
-                <div class="course-content">
-                    <h3 class="course-title">Professional Sewing</h3>
-                    <div class="course-footer">
-                        <div>
-                            <span class="course-price">R1500</span>
-                            <span class="price-label">Per full course</span>
-                        </div>
-                        <button class="course-btn">Enroll Now</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Professional Landscaping -->
-            <div class="course-card">
-                <div class="course-image landscaping">
-                    <div class="course-duration">6 Months</div>
-                </div>
-                <div class="course-content">
-                    <h3 class="course-title">Professional Landscaping</h3>
-                    <div class="course-footer">
-                        <div>
-                            <span class="course-price">R1500</span>
-                            <span class="price-label">Per full course</span>
-                        </div>
-                        <button class="course-btn">Enroll Now</button>
-                    </div>
+                <div class="why-choose-image">
+                    <div class="graduation-icon">🎓</div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Life Skills Development -->
-            <div class="course-card">
-                <div class="course-image life-skills">
-                    <div class="course-duration">6 Months</div>
-                </div>
-                <div class="course-content">
-                    <h3 class="course-title">Life Skills Development</h3>
-                    <div class="course-footer">
-                        <div>
-                            <span class="course-price">R1500</span>
-                            <span class="price-label">Per full course</span>
-                        </div>
-                        <button class="course-btn">Enroll Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Section -->
-        <section class="why-choose-section">
-            <h2>Why Choose Our 6-Month Courses?</h2>
-            <ul class="benefits-list">
-                <li>Nationally recognised certification upon completion</li>
-                <li>Industry-experienced instructors with years of expertise</li>
-                <li>Job placement assistance and career guidance</li>
-                <li>Practical, hands-on learning with modern equipment</li>
-                <li>Flexible payment options and financial assistance available</li>
-            </ul>
-        </section>
-
-        <!-- Course Comparison -->
-        <aside class="course-comparison">
-            <div class="comparison-icon">🎓</div>
-            <h3>Course Comparison</h3>
-            <p>Compare all our various 6-month courses side-by-side</p>
-            <button class="btn btn-primary" style="margin-top: 15px;">Compare 6-Month Courses</button>
-        </aside>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>What are the class schedules for 6-month courses?</h3>
-                    <p>Classes are held three times per week (Monday, Wednesday, Friday) with morning (9am-12pm) and evening (5:30pm-8:30pm) options available to accommodate working students.</p>
+                    <p>Classes are held three times per week (Monday, Wednesday, Friday) with morning (9am-12pm) and evening (6pm-9pm) sessions available to accommodate different schedules.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Are there any payment plans available?</h3>
-                    <p>Yes, we offer flexible payment plans including monthly installments and upfront payment discounts. Financial aid is also available for qualifying applicants.</p>
+                    <p>Yes, we offer flexible payment plans including monthly installments and upfront payment discounts. Financial assistance is also available for qualifying applicants.</p>
                 </div>
                 <div class="faq-item">
                     <h3>What certification will I receive?</h3>
-                    <p>After successful completion, you'll receive a nationally recognised certificate that is accredited by relevant industry bodies and the Department of Higher Education.</p>
+                    <p>Upon successful completion, you will receive a nationally recognized certificate that is accredited by relevant bodies and the Department of Higher Education.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Is there job placement assistance?</h3>
-                    <p>Yes, our career services team provides comprehensive employment support including CV guidance, interview preparation, and networking opportunities with potential employers.</p>
+                    <p>Yes, our career services team works with local employers to help graduates find job opportunities. We offer resume building and interview preparation.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>Ready to Transform Your Future?</h2>
-            <p>Enrol in one of our comprehensive 6-month courses and take the first step towards a new career path and improved skills.</p>
-            <div class="cta-buttons">
-                <button class="cta-btn cta-btn-primary">Apply Now</button>
-                <button class="cta-btn cta-btn-secondary">Calculate Your Course Cost</button>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Transform Your Future?</h2>
+                    <p>Enroll in any of our comprehensive professional courses and take the first step toward a new career path and improved skills.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-cta">Apply Now</button>
+                        <a href="#" class="cta-link">Calculate Your Course Cost</a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="lightbulb.jpg" alt="Transform Your Future">
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <div class="logo-icon">🎓</div>
-                        <span>Empowering the Nation</span>
-                    </div>
-                    <p style="margin-top: 15px; opacity: 0.8; line-height: 1.6;">
-                        Dedicated to providing quality education and skills development for a brighter future.
-                    </p>
-                    <div class="social-icons">
-                        <a href="" class="social-icon">f</a>
-                        <a href="" class="social-icon">t</a>
-                        <a href="" class="social-icon">i</a>
-                        <a href="" class="social-icon">in</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Empowering the Nation</h4>
+                    <p>Providing quality education and skills development. Join us on a journey to personal and professional growth.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📷</a>
+                        <a href="#">💼</a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="homepage.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="weekcourses.html">Courses</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Register</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Our Courses</a></li>
+                        <li><a href="#">Register</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Our Courses</h3>
+                <div class="footer-col">
+                    <h4>6-Week Courses</h4>
                     <ul>
-                        <li><a href="6monthcourses.html">6-Month Courses</a></li>
-                        <li><a href="">Child Minding</a></li>
-                        <li><a href="">Cooking</a></li>
-                        <li><a href="">Garden Maintenance</a></li>
-                        <li><a href="">First Aid</a></li>
-                        <li><a href="">Sewing</a></li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Child Minding</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
+                <div class="footer-col">
+                    <h4>6-Month Courses</h4>
                     <ul>
-                        <li>📍 123 Main Street, Johannesburg, South Africa</li>
-                        <li>📞 +27 11 123 4567</li>
-                        <li>✉️ info@empoweringthenation.co.za</li>
-                        <li>🕒 Mon-Fri: 8AM-5PM</li>
-                        <li>🕒 Sat: 9AM-2PM</li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Sewing</a></li>
+                        <li><a href="#">Landscaping</a></li>
+                        <li><a href="#">Life Skills</a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p>📍 Address: 1-123 Main Street, Johannesburg</p>
+                        <p>📍 Venue: 2-456 Ben Avenue, Pretoria, Johannesburg</p>
+                        <p>📍 Venue: 3-789 Mark Street, Durban, KwaZulu-Natal</p>
+                        <p>📞 +27 11 234 5678</p>
+                        <p>📞 +27 31 987 6543</p>
+                        <p>✉️ info@empoweringthenation.co.za</p>
+                        <p>✉️ contact@empoweringthenation.co.za</p>
+                        <p>⏰ Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Empowering the Nation. All rights reserved. | Privacy Policy | Terms of Service | Cookie Policy</p>
+                <p>© 2025 Empowering the Nation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>
