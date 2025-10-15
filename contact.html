@@ -4,266 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Empowering the Nation</title>
-    
-    <!--
-        Code Attribution
-        Title: Web Development (Introduction) [WEDE5020]
-        Author: The Independent Institute of Education (Pty) Ltd
-        Date Accessed: 13 August 2025
-        Date Created: 2025
-        Availability: https://advtechonline.sharepoint.com/...
-    -->
-    
-    <link rel="stylesheet" href="css-assets/contact.css">
+    <link href="css-assets/contact.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- 
-        Code Attribution: HTML5 Semantic Elements
-        Author: HTML and CSS Guidebook
-        Date Accessed: 14 August 2025
-        Availability: https://htmlandcssguidebook.com/html/html5-semantic/#section
-    -->
-    
-    <!-- Header navigation section -->
-    <header class="header">
-        <div class="nav-container">
-            <!-- Company logo and branding -->
-            <div class="logo">
-                <div class="logo-icon">EN</div>
-                Empowering the Nation
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">🏛️</span>
+                <span class="logo-text">Empowering the Nation</span>
             </div>
-            <!-- Main navigation menu -->
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="weekcourses.html">Courses</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Register</a></li>
-                </ul>
+            <nav class="navbar-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Courses</a>
+                <a href="#" class="nav-link active">Contact</a>
+                <a href="#" class="nav-link">Register</a>
             </nav>
-            <!-- Authentication buttons for user login -->
-            <div class="auth-buttons">
-                <button class="btn-signin">Sign In</button>
-                <button class="btn-register">Register</button>
+            <div class="navbar-buttons">
+                <button class="btn btn-signup">Sign Up</button>
+                <button class="btn btn-login">Login</button>
             </div>
         </div>
     </header>
 
-    <!-- Main page content -->
-    <main class="main-content">
-        <!-- Page title and introduction -->
-        <section class="hero-section">
-            <h1 class="hero-title">Contact Us</h1>
-            <p class="hero-subtitle">Have questions about our courses or services? Reach out to us using the form below or through our contact details.</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Section -->
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Have questions about our courses or services? Reach out to us using the form below or through our contact details.</p>
         </section>
 
-        <!-- Contact form and information container -->
-        <section class="contact-container">
-            <!-- Contact form section -->
-            <div class="contact-form">
-                <h2 class="form-title">Send Us a Message</h2>
-                <form>
-                    <!-- Name fields row -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+        <!-- Contact Form and Info Section -->
+        <section class="contact-section">
+            <div class="contact-form-container">
+                <div class="form-card">
+                    <h2>Send Us a Message</h2>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Enter your last name">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone number">
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Contact details row -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <div class="form-group full-width">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="What is your inquiry about?">
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="6" placeholder="Please provide details about your inquiry..."></textarea>
                         </div>
-                    </div>
 
-                    <!-- Subject field -->
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="What is your inquiry about?">
-                    </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="subscribe">
+                            <label for="subscribe">Subscribe to our newsletter for updates on new courses and events</label>
+                        </div>
 
-                    <!-- Message field -->
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Please provide details about your inquiry..."></textarea>
-                    </div>
-
-                    <!-- Newsletter subscription checkbox -->
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Subscribe to our newsletter for updates on new courses and events</label>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="submit" class="submit-btn">Submit Message</button>
-                </form>
-            </div>
-
-            <!-- Contact information panel -->
-            <div class="contact-info">
-                <h2 class="info-title">Contact Information</h2>
-                
-                <!-- Location information -->
-                <div class="info-item">
-                    <h3>📍 Our Location</h3>
-                    <p>- Venue 1: 123 Main Street, Sandton, Johannesburg<br>
-                    - Venue 2: 456 Elm Avenue, Soweto, Johannesburg<br>
-                    - Venue 3: 789 Oak Road, Randburg, Johannesburg</p>
+                        <button type="submit" class="btn btn-submit">Submit Message</button>
+                    </form>
                 </div>
 
-                <!-- Phone numbers -->
-                <div class="info-item">
-                    <h3>📞 Phone Number</h3>
-                    <p>+27 11 123 4567</p>
-                </div>
+                <div class="contact-info-card">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>Venue 1: 123 Main Street, Sanction, Johannesburg</p>
+                            <p>Venue 2: 456 Oak Avenue, Standerton</p>
+                            <p>Venue 3: 789 Oak Road, Randburg, Johannesburg</p>
+                        </div>
+                    </div>
 
-                <!-- Email address -->
-                <div class="info-item">
-                    <h3>✉️ Email Address</h3>
-                    <p><a href="mailto:info@empoweringthenation.co.za">info@empoweringthenation.co.za</a></p>
-                </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Phone Number</h3>
+                            <p>+27 11 123 4567</p>
+                            <p>+27 24 584 1154</p>
+                        </div>
+                    </div>
 
-                <!-- Operating hours -->
-                <div class="info-item">
-                    <h3>🕒 Operating Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
-                    Saturday: 9:00 AM - 1:00 PM<br>
-                    Sunday: Closed</p>
-                </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email Address</h3>
+                            <p><a href="mailto:info@empoweringthenation.co.za">info@empoweringthenation.co.za</a></p>
+                            <p><a href="mailto:contact@empoweringthenation.co.za">contact@empoweringthenation.co.za</a></p>
+                        </div>
+                    </div>
 
-                <!-- Map placeholder -->
-                <div class="map-placeholder">🗺️</div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h3>Operating Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p>Saturday: 10:00 AM - 1:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-logo">
+                        <img src="placeholder-logo.svg" alt="Empowering the Nation Logo">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Frequently Asked Questions section -->
+        <!-- FAQ Section -->
         <section class="faq-section">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="faq-grid">
-                <!-- Left column of FAQs -->
-                <div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">How do I enroll in a course?</h3>
-                        <p class="faq-answer">You can enroll in any of our courses by filling out the registration form on our website or by visiting our offices during operating hours.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Are there any prerequisites for the courses?</h3>
-                        <p class="faq-answer">Most of our courses don't require prior knowledge, but some advanced courses may have prerequisites. Check the specific course details for more information.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Do you offer financial aid?</h3>
-                        <p class="faq-answer">Yes, we offer various financial aid options and payment plans. Contact our financial department for more details about eligibility and application process.</p>
-                    </div>
+                <div class="faq-item">
+                    <h3>How do I enroll in a course?</h3>
+                    <p>You can enroll in any of our courses by filling out the registration form on our website or by visiting our campus during operating hours.</p>
                 </div>
-                
-                <!-- Right column of FAQs -->
-                <div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Can I visit the campus before enrolling?</h3>
-                        <p class="faq-answer">Absolutely! We encourage prospective students to visit our campus. You can schedule a tour by contacting us through this form or calling our office.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">What is your refund policy?</h3>
-                        <p class="faq-answer">We offer a 7-day cooling-off period after enrollment. Please refer to our Terms of Service for detailed information about our refund policy.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">How can I get more information about a specific course?</h3>
-                        <p class="faq-answer">You can find detailed information about each course on our website. If you need more information, feel free to contact us directly.</p>
-                    </div>
+                <div class="faq-item">
+                    <h3>Can I visit the campus before enrolling?</h3>
+                    <p>Absolutely! We encourage prospective students to visit our campus. You can schedule a tour by contacting us through this form or calling our office.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there any prerequisites for the courses?</h3>
+                    <p>Most of our courses don't require prior knowledge, but some advanced courses may have prerequisites. Check the specific course details for more information.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your refund policy?</h3>
+                    <p>We offer a 7-day cooling-off period after enrollment. Please refer to our Terms of Service for detailed information about our refund policy.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer financial aid?</h3>
+                    <p>Yes, we offer various financial aid options and payment plans. Contact our financial department for more details on eligibility and application process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I get more information about a specific course?</h3>
+                    <p>You can find detailed information about each course on our website. If you need more information, feel free to contact us directly.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Social media connection section -->
+        <!-- Social Media Section -->
         <section class="social-section">
-            <h2 class="social-title">Connect With Us</h2>
-            <p class="social-subtitle">Follow us on social media to stay updated with our latest courses, events, and success stories.</p>
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media to stay updated with our latest courses, events, and success stories.</p>
             <div class="social-links">
-                <a href="#" title="Facebook">📘</a>
-                <a href="#" title="Twitter">🐦</a>
-                <a href="#" title="Instagram">📷</a>
-                <a href="#" title="LinkedIn">💼</a>
-                <a href="#" title="YouTube">📺</a>
+                <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                <a href="#" class="social-icon" aria-label="YouTube">▶</a>
             </div>
         </section>
     </main>
 
-    <!-- Site footer with links and contact information -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <!-- Company information section -->
             <div class="footer-section">
-                <div class="footer-logo">
-                    <div class="footer-logo-icon">EN</div>
-                    Empowering the Nation
-                </div>
-                <p class="footer-description">Transforming lives through quality education and skills development. Join us on a journey to empower yourself and your community.</p>
+                <h3>Empowering the Nation</h3>
+                <p>Transforming lives through quality education and skills development. Join us on the journey to empower yourself and your community.</p>
                 <div class="footer-social">
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="Instagram">📷</a>
-                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">📷</a>
+                    <a href="#">in</a>
                 </div>
             </div>
 
-            <!-- Quick links section -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="weekcourses.html">Our Courses</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="login.html">Register</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Courses</a></li>
+                    <li><a href="#">Register</a></li>
                 </ul>
             </div>
 
-            <!-- Course links section -->
             <div class="footer-section">
-                <h3>Our Courses</h3>
+                <h3>6-Week Courses</h3>
                 <ul>
-                    <li><a href="weekcourses.html">6-Week Courses</a></li>
-                    <li><a href="6monthcourses.html">6-Month Courses</a></li>
-                    <li><a href="">Child Minding</a></li>
-                    <li><a href="">Cooking</a></li>
-                    <li><a href="">Garden Maintenance</a></li>
-                    <li><a href="">First Aid</a></li>
-                    <li><a href="">Sewing</a></li>
-                    <li><a href="">Landscaping</a></li>
-                    <li><a href="">Life Skills</a></li>
+                    <li><a href="#">Child Minding</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Gender Maintenance</a></li>
                 </ul>
             </div>
 
-            <!-- Contact information section -->
+            <div class="footer-section">
+                <h3>6-Month Courses</h3>
+                <ul>
+                    <li><a href="#">First Aid</a></li>
+                    <li><a href="#">Sewing</a></li>
+                    <li><a href="#">Landscaping</a></li>
+                    <li><a href="#">Life Skills</a></li>
+                </ul>
+            </div>
+
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <ul>
-                    <li>- Venue 1: 123 Main Street, Sandton, Johannesburg</li>
-                    <li>- Venue 2: 456 Elm Avenue, Soweto, Johannesburg</li>
-                    <li>- Venue 3: 789 Oak Road, Randburg, Johannesburg</li>
-                    <li>📞 +27 11 123 4567</li>
-                    <li>✉️ info@empoweringthenation.co.za</li>
-                    <li>🕒 Mon-Fri: 8:00 AM - 5:00 PM</li>
-                </ul>
+                <p>📍 Venue 1: 123 Main Street, Sanction, Johannesburg</p>
+                <p>📍 Venue 2: 456 Oak Avenue, Standerton</p>
+                <p>📍 Venue 3: 789 Oak Road, Randburg, Johannesburg</p>
+                <p>📞 +27 11 123 4567 / +27 24 584 1154</p>
+                <p>✉️ info@empoweringthenation.co.za</p>
+                <p>✉️ contact@empoweringthenation.co.za</p>
+                <p>🕐 Mon-Fri: 8:00 AM - 5:00 PM</p>
             </div>
         </div>
 
-        <!-- Copyright information -->
         <div class="footer-bottom">
             <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
-            <p>Privacy Policy | Terms of Service | Cookie Policy</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
         </div>
     </footer>
 </body>
