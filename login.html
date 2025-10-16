@@ -4,136 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empowering the Nation - Login</title>
-
+<link href="css-assets/login.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">
-            <div class="logo-icon">📊</div>
-            Empowering the Nation
-        </div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#register">Register</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <button class="sign-in-btn">Sign In</button>
-            <button class="register-btn">Register</button>
+        <div class="container">
+            <div class="nav-wrapper">
+                <h1 class="logo">Empowering the Nation</h1>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Courses</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Register</a>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-signup">Sign Up</button>
+                    <button class="btn btn-login">Login</button>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <h1 class="login-title">Log in to continue your learning journey</h1>
-        
-        <div class="login-container">
-            <form class="login-form">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="form-input" placeholder="Enter your email here">
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="form-input" placeholder="Enter your password here">
-                </div>
-                
-                <button type="submit" class="continue-btn">Continue</button>
-            </form>
+        <div class="container">
+            <h2 class="page-title">Log in to continue your learning journey</h2>
             
-            <div class="divider">
-                <span>Other ways to login</span>
-            </div>
-            
-            <div class="social-login">
-                <a href="#" class="social-btn">
-                    <span class="social-icon">G</span>
-                    Continue with google
-                </a>
-                <a href="#" class="social-btn">
-                    <span class="social-icon">🐦</span>
-                    Continue with Twitter
-                </a>
-                <a href="#" class="social-btn">
-                    <span class="social-icon">f</span>
-                    Continue with Facebook
-                </a>
-            </div>
-            
-            <div class="signup-link">
-                Don't have an account? <a href="#signup">Sign up here</a>
+            <div class="login-card">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email here">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Enter your password here">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-continue">Continue</button>
+                    
+                    <div class="divider">
+                        <span>Other ways to login</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn btn-social">
+                            <i class="fab fa-google"></i>
+                            Continue with google
+                        </button>
+                        <button type="button" class="btn btn-social">
+                            <i class="fab fa-twitter"></i>
+                            Continue with Twitter
+                        </button>
+                        <button type="button" class="btn btn-social">
+                            <i class="fab fa-facebook"></i>
+                            Continue with Facebook
+                        </button>
+                    </div>
+                    
+                    <p class="signup-text">
+                        Dont have an account? <a href="#" class="signup-link">Sign up here</a>
+                    </p>
+                </form>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="logo">
-                    <div class="logo-icon">📊</div>
-                    Empowering the Nation
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">Empowering the Nation</h3>
+                    <p class="footer-description">
+                        Transforming lives through quality education and skills development. Join us on a journey to empower yourself and your community.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-                <p>Transforming lives through quality education and skills development. Join us on a journey to empower yourself and your community.</p>
-                <div class="social-icons">
-                    <a href="#">f</a>
-                    <a href="#">🐦</a>
-                    <a href="#">📷</a>
-                    <a href="#">💼</a>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Courses</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">6-Week Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Child Minding</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">6-Month Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Sewing</a></li>
+                        <li><a href="#">Landscaping</a></li>
+                        <li><a href="#">Life Skills</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>- Venue 1: 123 Main Street, Sandton, Johannesburg</p>
+                                <p>- Venue 2: 456 Elm Avenue, Soweto, Johannesburg</p>
+                                <p>- Venue 3: 789 Oak Road, Randburg, Johannesburg</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+27 11 123 4567 +27 24 584 1154</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>info@empoweringthenation.co.za</p>
+                                <p>contact@empoweringthenation.co.za</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#courses">Our Courses</a></li>
-                    <li><a href="#register">Register</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Our Courses</h3>
-                <ul>
-                    <li><a href="#">6-Week Courses</a></li>
-                    <li><a href="#">6-Month Courses</a></li>
-                    <li><a href="#">Child Minding</a></li>
-                    <li><a href="#">First Aid</a></li>
-                    <li><a href="#">Cooking</a></li>
-                    <li><a href="#">Sewing</a></li>
-                    <li><a href="#">Garden Maintenance</a></li>
-                    <li><a href="#">Landscaping</a></li>
-                    <li><a href="#">Life Skills</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>📍 Venue 1: 123 Main Street, Sandton, Johannesburg</li>
-                    <li>📍 Venue 2: 456 Market Street, Soweto, Johannesburg</li>
-                    <li>📍 Venue 3: 789 Oak Road, Randburg, Johannesburg</li>
-                    <li>📞 +27 11 123 4567</li>
-                    <li>✉️ info@empoweringthenation.co.za</li>
-                    <li>🕐 Mon-Fri: 8:00 AM - 5:00 PM</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>© 2025 Empowering the Nation. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Empowering the Nation. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>
