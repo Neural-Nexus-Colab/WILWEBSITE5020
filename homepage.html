@@ -1,260 +1,295 @@
-<!--
-    Code Attribution
-    Title: Web Development (Introduction) [WEDE5020]
-    Author: The Independent Institute of Education (Pty) Ltd
-    Date Accessed: 13 August 2025
-    Date Created: 2025
-    Version: Not specified
-    Availability: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true
--->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering the Nation</title>
-    <link href="css-assets/homepage.css" rel="stylesheet" />
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <div class="logo-icon">e</div>
-                    <span>Empowering the Nation</span>
-                </div>
-                <nav class="nav">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#courses">Courses</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#register">Register</a>
-                </nav>
-                <div class="auth-buttons">
-                    <button class="btn-secondary">Sign Up</button>
-                    <button class="btn-primary">Login</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empowering the Nation - Home</title>
+    <link rel="stylesheet" href="css-assets/homepage.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="_images/image.png" alt="Logo" />
+          <span>Empowering the Nation</span>
         </div>
-    </header>
+        <ul class="nav-menu">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link has-dropdown">Courses</a>
+            <div class="dropdown">
+              <a href="weekcourses.html">Six Week</a>
+              <a href="6monthcourses.html">Six Month</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registercourse.html">Register</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn-signup">Sign Up</button>
+          <button class="btn-login">Login</button>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay">
-            <div class="container">
-                <h1 class="hero-title">Empower Your Future Through Education</h1>
-                <p class="hero-subtitle">Discover practical skills and knowledge that transforms lives and builds stronger communities across South Africa.</p>
-                <div class="hero-buttons">
-                    <button class="btn-white">Explore Courses</button>
-                    <button class="btn-outline">Learn More</button>
-                </div>
-            </div>
+      <div class="hero-content">
+        <h1>Empower Your Future Through Education</h1>
+        <p>
+          Discover practical skills and knowledge that transform lives and build
+          stronger communities across South Africa.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary">Explore Courses</button>
+          <button class="btn-secondary">Learn More</button>
         </div>
+      </div>
     </section>
 
     <!-- Mission Section -->
     <section class="mission">
-        <div class="container">
-            <h2 class="section-title">Our Mission</h2>
-            <p class="mission-text">At Empowering the Nation, we believe that education is the cornerstone of personal and community development. Our mission is to provide accessible, quality education that equips individuals with practical skills for sustainable livelihoods.</p>
-            
-            <div class="mission-cards">
-                <div class="mission-card">
-                    <div class="icon-book"></div>
-                    <h3>Quality Education</h3>
-                    <p>Our courses are carefully crafted to ensure that learners acquire relevant knowledge and skills that meet market demands.</p>
-                </div>
-                <div class="mission-card">
-                    <div class="icon-community"></div>
-                    <h3>Community Impact</h3>
-                    <p>We empower individuals to become agents of change in their communities, creating a ripple effect of positive transformation.</p>
-                </div>
-                <div class="mission-card">
-                    <div class="icon-award"></div>
-                    <h3>Recognized Certification</h3>
-                    <p>Earn certificates that are recognized by employers and institutions, enhancing your employability and career prospects.</p>
-                </div>
-            </div>
+      <h2>Our Mission</h2>
+      <p class="mission-intro">
+        At Empowering the Nation, we believe that education is the cornerstone
+        of personal and community development. Our mission is to provide
+        accessible, quality education that equips individuals with practical
+        skills for sustainable livelihoods.
+      </p>
+      <div class="mission-cards">
+        <div class="mission-card">
+          <div class="mission-icon">📚</div>
+          <h3>Quality Education</h3>
+          <p>
+            Our courses are designed by industry experts to ensure you receive
+            relevant, up-to-date knowledge and practical hands-on skills.
+          </p>
         </div>
+        <div class="mission-card">
+          <div class="mission-icon">🤝</div>
+          <h3>Community Impact</h3>
+          <p>
+            We empower individuals to become agents of change in their
+            communities, creating a ripple effect of positive transformation.
+          </p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">🎓</div>
+          <h3>Recognized Certification</h3>
+          <p>
+            Earn certificates that are recognized by employers and institutions,
+            enhancing your employability and career prospects.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Course Offerings -->
     <section class="courses">
-        <div class="container">
-            <h2 class="section-title">Our Course Offerings</h2>
-            <p class="courses-subtitle">Choose from our range of practical courses designed to equip you with valuable skills for personal growth and employment opportunities.</p>
-            
-            <div class="course-options">
-                <div class="course-card">
-                    <img src="placeholder-course1.jpg" alt="6-Week Courses">
-                    <div class="course-content">
-                        <h3>6-Week Courses</h3>
-                        <p>Short-term intensive programs that focus on specific skills. These intensive courses focus on practical knowledge you can immediately apply.</p>
-                        <ul class="course-list">
-                            <li>Child Minding</li>
-                            <li>Basic Cooking</li>
-                            <li>Garden Maintenance</li>
-                        </ul>
-                        <button class="btn-yellow">Explore 6-Week Courses</button>
-                    </div>
-                </div>
-                
-                <div class="course-card">
-                    <img src="placeholder-course2.jpg" alt="6-Month Courses">
-                    <div class="course-content">
-                        <h3>6-Month Courses</h3>
-                        <p>Comprehensive programs that provide in-depth knowledge and skills, preparing you for immediate entry into entrepreneurship.</p>
-                        <ul class="course-list">
-                            <li>First Aid Certification</li>
-                            <li>Professional Sewing</li>
-                            <li>Landscaping & Design</li>
-                            <li>Life Skills Development</li>
-                        </ul>
-                        <button class="btn-yellow">Explore 6-Month Courses</button>
-                    </div>
-                </div>
-            </div>
+      <h2>Our Course Offerings</h2>
+      <p class="courses-intro">
+        Choose from our range of practical courses designed to equip you with
+        valuable skills for personal growth and employment opportunities.
+      </p>
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-image"></div>
+          <div class="course-content">
+            <h3>6-Week Courses</h3>
+            <p>
+              Perfect for those looking to quickly acquire specific skills.
+              These intensive courses focus on practical knowledge you can
+              immediately apply.
+            </p>
+            <ul class="course-list">
+              <li>Child Minding</li>
+              <li>Basic Cooking</li>
+              <li>Garden Maintenance</li>
+            </ul>
+            <button class="btn-course">Explore 6-Week Courses</button>
+          </div>
         </div>
+        <div class="course-card">
+          <div class="course-image"></div>
+          <div class="course-content">
+            <h3>6-Month Courses</h3>
+            <p>
+              Comprehensive programs that provide in-depth knowledge and skills,
+              preparing you for professional opportunities or entrepreneurship.
+            </p>
+            <ul class="course-list">
+              <li>First Aid Certification</li>
+              <li>Professional Sewing</li>
+              <li>Landscaping & Design</li>
+              <li>Life Skills Development</li>
+            </ul>
+            <button class="btn-course">Explore 6-Month Courses</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Calculator Section -->
     <section class="calculator">
-        <div class="container">
-            <div class="calculator-content">
-                <div class="calculator-text">
-                    <h2>Calculate Your Course Investment</h2>
-                    <p>We believe in transparent pricing and affordable education. Use our calculator to estimate the cost of your desired courses, including bundled and individual payment plans.</p>
-                    <ul class="calculator-features">
-                        <li>Flexible payment options</li>
-                        <li>Subsidies for qualifying students</li>
-                        <li>Group enrollment discounts</li>
-                    </ul>
-                    <button class="btn-yellow">Try Our Calculator</button>
-                </div>
-                <div class="calculator-image">
-                    <img src="placeholder-books.jpg" alt="Education Resources">
-                </div>
-            </div>
+      <div class="calculator-content">
+        <div class="calculator-text">
+          <h2>Calculate Your Course Investment</h2>
+          <p>
+            We believe in transparent pricing and affordable education. Use our
+            calculator to estimate the cost of your desired course, including
+            available subsidies and payment plans.
+          </p>
+          <ul class="calculator-features">
+            <li>Flexible payment options</li>
+            <li>Subsidies for qualifying applicants</li>
+            <li>Group enrollment discounts</li>
+          </ul>
+          <button class="btn-course">Try Our Calculator</button>
         </div>
+        <div class="calculator-image"></div>
+      </div>
     </section>
 
     <!-- Success Stories -->
-    <section class="success">
-        <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <p class="success-subtitle">Hear from our graduates who have transformed their lives through our educational programs.</p>
-            
-            <div class="testimonials">
-                <div class="testimonial">
-                    <div class="testimonial-avatar">TM</div>
-                    <div class="testimonial-content">
-                        <h4>Thabo Malele</h4>
-                        <p class="testimonial-title">Landscaping Graduate</p>
-                        <p class="testimonial-date">15 March 2023</p>
-                        <p class="testimonial-text">"The landscaping course gave me practical skills that I desperately needed. Now I run my own landscaping business and employ 4 staff. I'm grateful for the Johannesburg."</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial">
-                    <div class="testimonial-avatar">ND</div>
-                    <div class="testimonial-content">
-                        <h4>Noli Douglas</h4>
-                        <p class="testimonial-title">Sewing Program Alumni</p>
-                        <p class="testimonial-date">23 January 2023</p>
-                        <p class="testimonial-text">"After completing the sewing course, I started making school uniforms from home. The training not only gave me skills but also showed my family and gave me unlimited."</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial">
-                    <div class="testimonial-avatar">LK</div>
-                    <div class="testimonial-content">
-                        <h4>Lerato Kumar</h4>
-                        <p class="testimonial-title">Child Minding Certificate Holder</p>
-                        <p class="testimonial-date">11 May 2023</p>
-                        <p class="testimonial-text">"The child minding course opened doors for me. I now work at a reputable daycare center and am developing my own early childhood development."</p>
-                    </div>
-                </div>
+    <section class="testimonials">
+      <h2>Success Stories</h2>
+      <p class="testimonials-intro">
+        Hear from our graduates who have transformed their lives through our
+        educational programs.
+      </p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">TM</div>
+            <div class="testimonial-info">
+              <h4>Thabo Molefe</h4>
+              <p>Landscaping Graduate<br />May 2021</p>
             </div>
+          </div>
+          <p class="content">
+            The landscaping course changed my life completely. I now have the
+            skills and confidence that I immediately put to use. I now run my
+            own small business serving five neighborhoods in my community.
+          </p>
         </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">ND</div>
+            <div class="testimonial-info">
+              <h4>Neli Douglas</h4>
+              <p>Sewing Program Alumna<br />March 2021</p>
+            </div>
+          </div>
+          <p class="content">
+            This sewing program opened doors I never knew existed. I learned
+            practical skills and gained making skills software for local
+            children. The skills I learned now allowed me to support my family
+            and send my children to university.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">LK</div>
+            <div class="testimonial-info">
+              <h4>Lesedi Kumar</h4>
+              <p>Child Minding Certificate Holder<br />Jul 2021</p>
+            </div>
+          </div>
+          <p class="content">
+            I always loved working with children, and this certification gave me
+            the credentials I needed. I now work as a reputable daycare center
+            and am pursuing further studies in early childhood development.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta">
-        <div class="container">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Join thousands of South Africans who have transformed their lives through our practical education programs.</p>
-            <div class="cta-buttons">
-                <button class="btn-white">Explore 6-Week Countires</button>
-                <button class="btn-white">Explore 6-Month Courses</button>
-                <button class="btn-outline-white">Contact Us</button>
-            </div>
-        </div>
+      <h2>Ready to Start Your Journey?</h2>
+      <p>
+        Join thousands of South Africans who have transformed their lives
+        through our practical education programs.
+      </p>
+      <div class="cta-buttons">
+        <button class="btn-cta">Explore 6-Week Courses</button>
+        <button class="btn-cta">Explore 6-Month Courses</button>
+        <button class="btn-cta">Contact Us</button>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Empowering the Nation</h3>
-                    <p>Transforming lives through quality education and skills development programs that matter.</p>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">t</a>
-                        <a href="#" aria-label="Instagram">i</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Our Courses</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>6-Week Courses</h4>
-                    <ul>
-                        <li><a href="#">Child Minding</a></li>
-                        <li><a href="#">Cooking</a></li>
-                        <li><a href="#">Garden Maintenance</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>6-Month Courses</h4>
-                    <ul>
-                        <li><a href="#">First Aid</a></li>
-                        <li><a href="#">Sewing</a></li>
-                        <li><a href="#">Landscaping</a></li>
-                        <li><a href="#">Life Skills</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-                    <p>📍 Address: 3, 123 Main Street, Durban, Johannesburg and Cape Town, Gauteng, 2000, South Africa</p>
-                    <p>📞 +27 11 123 4567 | +27 11 890 1234</p>
-                    <p>✉️ Info@empoweringthenation.co.za<br>admissions@empoweringthenation.co.za</p>
-                    <p>🕐 Mon-Fri: 8:00 AM – 4:00 PM</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2025 Empowering the Nation. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Empowering the Nation</h3>
+          <p>
+            Transforming lives through quality education and skills development.
+            Join us on a journey to empower yourself and your community.
+          </p>
+          <div class="social-icons">
+            <a href="" class="social-icon">f</a>
+            <a href="" class="social-icon">𝕏</a>
+            <a href="" class="social-icon">📷</a>
+            <a href="" class="social-icon">in</a>
+          </div>
         </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registercourse.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>6-Week Courses</h3>
+          <ul>
+            <li><a href="weekcourses.html">Child Minding</a></li>
+            <li><a href="weekcourses.html">Cooking</a></li>
+            <li><a href="weekcourses.html">Garden Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>6-Month Courses</h3>
+          <ul>
+            <li><a href="6monthcourses.html">First Aid</a></li>
+            <li><a href="6monthcourses.html">Sewing</a></li>
+            <li><a href="6monthcourses.html">Landscaping</a></li>
+            <li><a href="6monthcourses.html">Life Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><strong>Venue 1:</strong> 123 Main Street, Johannesburg</p>
+            <p><strong>Venue 2:</strong> 456 Elm Avenue, Soweto</p>
+            <p><strong>Venue 3:</strong> 789 Oak Road, Randburg</p>
+            <p><strong>Phone:</strong> +27 11 123 4567<br />+27 24 584 1154</p>
+            <p>
+              <strong>Email:</strong>
+              info@empoweringthenation.co.za<br />contact@empoweringthenation.co.za
+            </p>
+            <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookie Policy</a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
