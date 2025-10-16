@@ -25,25 +25,35 @@
     -->
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Empowering the Nation</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active">About</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </nav>
-            <div class="header-buttons">
-                <button class="btn-secondary">Search</button>
-                <button class="btn-primary">Login</button>
-            </div>
+      
+            <!-- Navigation -->
+            <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="_images/image.png" alt="Logo" />
+          <span>Empowering the Nation</span>
         </div>
+
+        <ul class="nav-menu">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link has-dropdown">Courses</a>
+            <div class="dropdown">
+              <a href="weekcourses.html">Six Week</a>
+              <a href="6monthcourses.html">Six Month</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registercourse.html">Register</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn-signup" id="navSignup">Sign Up</button>
+          <button class="btn-login" id="navLogin">Login</button>
+        </div>
+      </div>
+    </nav>
+
     </header>
 
     <!-- Hero Section -->
@@ -243,70 +253,76 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Empowering the Nation</h3>
-                    <p>Transforming lives through quality, accessible education and skills development programs.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Our Courses</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>6-Week Courses</h4>
-                    <ul>
-                        <li><a href="#">Child Minding</a></li>
-                        <li><a href="#">Cooking</a></li>
-                        <li><a href="#">Garden Maintenance</a></li>
-                        <li><a href="#">Life Skills</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>6-Month Courses</h4>
-                    <ul>
-                        <li><a href="#">Sewing</a></li>
-                        <li><a href="#">First Aid</a></li>
-                        <li><a href="#">Landscaping</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Venue 1: 123 Main Street, Brooklyn, Johannesburg</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Venue 2: 456 Oak Avenue, Sandton, Johannesburg</p>
-                    <p><i class="fas fa-phone"></i> +27 83 539 482 / +27 48 586 1324</p>
-                    <p><i class="fas fa-envelope"></i> info@empoweringthenation.co.za</p>
-                    <p><i class="fas fa-envelope"></i> contact@empoweringthenation.co.za</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2023 Empowering the Nation. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
+   <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Empowering the Nation</h3>
+          <p>
+            Transforming lives through quality education and skills development.
+            Join us on a journey to empower yourself and your community.
+          </p>
+          <div class="social-icons">
+            <a href="" class="social-icon">f</a>
+            <a href="" class="social-icon">𝕏</a>
+            <a href="" class="social-icon">📷</a>
+            <a href="" class="social-icon">in</a>
+          </div>
         </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registercourse.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>6-Week Courses</h3>
+          <ul>
+            <li><a href="weekcourses.html">Child Minding</a></li>
+            <li><a href="weekcourses.html">Cooking</a></li>
+            <li><a href="weekcourses.html">Garden Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>6-Month Courses</h3>
+          <ul>
+            <li><a href="6monthcourses.html">First Aid</a></li>
+            <li><a href="6monthcourses.html">Sewing</a></li>
+            <li><a href="6monthcourses.html">Landscaping</a></li>
+            <li><a href="6monthcourses.html">Life Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><strong>Venue 1:</strong> 123 Main Street, Johannesburg</p>
+            <p><strong>Venue 2:</strong> 456 Elm Avenue, Soweto</p>
+            <p><strong>Venue 3:</strong> 789 Oak Road, Randburg</p>
+            <p><strong>Phone:</strong> +27 11 123 4567<br />+27 24 584 1154</p>
+            <p>
+              <strong>Email:</strong>
+              info@empoweringthenation.co.za<br />contact@empoweringthenation.co.za
+            </p>
+            <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookie Policy</a>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="js-assets/scripts.js"></script>
+  </body>
 </html>
