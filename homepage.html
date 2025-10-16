@@ -28,8 +28,8 @@
           <li><a href="registercourse.html">Register</a></li>
         </ul>
         <div class="auth-buttons">
-          <button class="btn-signup">Sign Up</button>
-          <button class="btn-login">Login</button>
+          <button class="btn-signup" id="navSignup">Sign Up</button>
+          <button class="btn-login" id="navLogin">Login</button>
         </div>
       </div>
     </nav>
@@ -43,8 +43,10 @@
           stronger communities across South Africa.
         </p>
         <div class="hero-buttons">
-          <button class="btn-primary">Explore Courses</button>
-          <button class="btn-secondary">Learn More</button>
+          <button type="button" class="btn-primary" id="navCourses">
+            Explore Courses
+          </button>
+          <button class="btn-secondary" id="navAbout">Learn More</button>
         </div>
       </div>
     </section>
@@ -95,7 +97,11 @@
       </p>
       <div class="course-grid">
         <div class="course-card">
-          <div class="course-image"></div>
+          <img
+            src="_images/bookswilhomepage.jpeg"
+            alt="Home page books image"
+            class="course-image"
+          />
           <div class="course-content">
             <h3>6-Week Courses</h3>
             <p>
@@ -108,11 +114,17 @@
               <li>Basic Cooking</li>
               <li>Garden Maintenance</li>
             </ul>
-            <button class="btn-course">Explore 6-Week Courses</button>
+            <button class="btn-course" id="navWeek">
+              Explore 6-Week Courses
+            </button>
           </div>
         </div>
         <div class="course-card">
-          <div class="course-image"></div>
+          <img
+            src="_images/greenastheticbook.jpg"
+            alt="Home page book image"
+            class="course-image"
+          />
           <div class="course-content">
             <h3>6-Month Courses</h3>
             <p>
@@ -125,7 +137,9 @@
               <li>Landscaping & Design</li>
               <li>Life Skills Development</li>
             </ul>
-            <button class="btn-course">Explore 6-Month Courses</button>
+            <button class="btn-course" id="month">
+              Explore 6-Month Courses
+            </button>
           </div>
         </div>
       </div>
@@ -146,9 +160,14 @@
             <li>Subsidies for qualifying applicants</li>
             <li>Group enrollment discounts</li>
           </ul>
-          <button class="btn-course">Try Our Calculator</button>
+          <button class="btn-course" id="calc">Try Our Calculator</button>
         </div>
-        <div class="calculator-image"></div>
+
+        <img
+          src="_images/booksthinghomepage.jpeg"
+          alt="Home page books calculator panel image"
+          class="calculator-image"
+        />
       </div>
     </section>
 
@@ -214,9 +233,9 @@
         through our practical education programs.
       </p>
       <div class="cta-buttons">
-        <button class="btn-cta">Explore 6-Week Courses</button>
-        <button class="btn-cta">Explore 6-Month Courses</button>
-        <button class="btn-cta">Contact Us</button>
+        <button class="btn-cta" id="week">Explore 6-Week Courses</button>
+        <button class="btn-cta" id="months">Explore 6-Month Courses</button>
+        <button class="btn-cta" id="contact">Contact Us</button>
       </div>
     </section>
 
@@ -291,5 +310,6 @@
         </div>
       </div>
     </footer>
+    <script src="js-assets/scripts.js"></script>
   </body>
 </html>
