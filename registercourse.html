@@ -3,267 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register For The Courses - Empowering the Nation</title>
-    
-    <!--
-        Code Attribution
-        Title: Web Development (Introduction) [WEDE5020]
-        Author: The Independent Institute of Education (Pty) Ltd
-        Date Accessed: 13 August 2025
-        Date Created: 2025
-        Availability: https://advtechonline.sharepoint.com/...
-    -->
-    
-    <link rel="stylesheet" href="css-assets/registercourse.css">
+    <title>Empowering the Nation - Register For Courses</title>
+    <link href="css-assets/registercourse.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- 
-        Code Attribution: HTML5 Semantic Elements
-        Author: HTML and CSS Guidebook
-        Date Accessed: 14 August 2025
-        Availability: https://htmlandcssguidebook.com/html/html5-semantic/#section
-    -->
-    
-    <!-- Header navigation section -->
-    <header class="header">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="nav-container">
-            <!-- Company logo and branding -->
             <div class="logo">
-                <div class="logo-icon">EN</div>
-                Empowering the Nation
+                <img src="logo.png" alt="Logo">
+                <span>Empowering the Nation</span>
             </div>
-            <!-- Main navigation menu -->
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#register">Register</a></li>
-                </ul>
-            </nav>
-            <!-- Authentication buttons for user login -->
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#register" class="nav-register">Register</a></li>
+            </ul>
             <div class="auth-buttons">
-                <button class="btn-signin">Sign In</button>
-                <button class="btn-register">Register</button>
+                <button class="btn-signup">Sign Up</button>
+                <button class="btn-login">Login</button>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main page content -->
-    <main class="main-content">
-        <!-- Page title section -->
-        <section class="hero-section">
-            <h1 class="hero-title">Register For The Courses</h1>
-        </section>
+    <!-- Main Content -->
+    <main>
+        <h1 class="page-title">Register For The Courses</h1>
 
-        <!-- Discount information panel -->
-        <section class="discount-info">
-            <h2 class="discount-title">Discount Information</h2>
-            <p class="discount-text">Our discounts for enrolling in multiple courses:</p>
-            <ul class="discount-list">
-                <li>1 course: No discount</li>
-                <li>2 courses: 5% discount</li>
-                <li>3 courses: 10% discount</li>
-                <li>4+ courses: 15% discount</li>
-            </ul>
-            <div class="vat-notice">
-                <span class="vat-text">VAT (15%) will be added to the final total after any applicable discounts.</span>
-            </div>
-        </section>
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Left Section: Discount & Selection -->
+            <div class="left-section">
+                <!-- Discount Information -->
+                <div class="discount-box">
+                    <h2>Discount Information</h2>
+                    <p>Our discounts for enrolling in multiple courses:</p>
+                    <ul class="discount-list">
+                        <li>1 course: No discount</li>
+                        <li>2 courses: 5% discount</li>
+                        <li>3 courses: 10% discount</li>
+                        <li>4+ courses: 15% discount</li>
+                    </ul>
+                    <div class="vat-notice">
+                        <span class="info-icon">ℹ</span>
+                        <p>VAT (15%) will be added to the final total after any applicable discounts.</p>
+                    </div>
+                </div>
 
-        <!-- Registration form container -->
-        <section class="registration-container">
-            <div class="registration-form">
-                <!-- Course selection section -->
-                <div class="course-selection">
-                    <h2 class="section-title">Select Your Courses</h2>
-                    
+                <!-- Credit Card Image -->
+                <div class="card-image">
+                    <img src="credit-cards.png" alt="Credit Cards">
+                </div>
+
+                <!-- Course Selection & Contact Info -->
+                <div class="selection-box">
+                    <h2>Select Your Courses</h2>
+
                     <!-- 6-Week Courses -->
-                    <div class="course-category">
-                        <h3 class="category-title">6-Week Courses</h3>
-                        <div class="course-options">
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="child-minding">
-                                <div>
-                                    <div class="course-name">Child Minding</div>
-                                    <div class="course-price">(R750)</div>
-                                </div>
+                    <div class="course-section">
+                        <h3>6-Week Courses</h3>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="course" value="child-minding">
+                                <span>Child Minding (R750)</span>
                             </label>
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="cooking">
-                                <div>
-                                    <div class="course-name">Cooking Basics</div>
-                                    <div class="course-price">(R750)</div>
-                                </div>
+                            <label>
+                                <input type="checkbox" name="course" value="cooking">
+                                <span>Cooking Basics (R750)</span>
                             </label>
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="garden-maintenance">
-                                <div>
-                                    <div class="course-name">Garden Maintenance</div>
-                                    <div class="course-price">(R750)</div>
-                                </div>
+                            <label>
+                                <input type="checkbox" name="course" value="garden">
+                                <span>Garden Maintenance (R750)</span>
                             </label>
                         </div>
                     </div>
 
                     <!-- 6-Month Courses -->
-                    <div class="course-category">
-                        <h3 class="category-title">6-Month Courses</h3>
-                        <div class="course-options">
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="first-aid">
-                                <div>
-                                    <div class="course-name">First Aid</div>
-                                    <div class="course-price">(R1500)</div>
-                                </div>
+                    <div class="course-section">
+                        <h3>6-Month Courses</h3>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="course" value="first-aid">
+                                <span>First Aid (R1500)</span>
                             </label>
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="sewing">
-                                <div>
-                                    <div class="course-name">Sewing & Tailoring</div>
-                                    <div class="course-price">(R1500)</div>
-                                </div>
+                            <label>
+                                <input type="checkbox" name="course" value="sewing">
+                                <span>Sewing & Tailoring (R1500)</span>
                             </label>
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="landscaping">
-                                <div>
-                                    <div class="course-name">Landscaping</div>
-                                    <div class="course-price">(R1500)</div>
-                                </div>
+                            <label>
+                                <input type="checkbox" name="course" value="landscaping">
+                                <span>Landscaping (R1500)</span>
                             </label>
-                            <label class="course-option">
-                                <input type="checkbox" name="courses" value="life-skills">
-                                <div>
-                                    <div class="course-name">Life Skills</div>
-                                    <div class="course-price">(R1500)</div>
-                                </div>
+                            <label>
+                                <input type="checkbox" name="course" value="life-skills">
+                                <span>Life Skills (R1500)</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Contact Information Form -->
-                    <div class="contact-form">
-                        <h3 class="category-title">Contact Information</h3>
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
-                            </div>
-                            <div class="form-group">
-                                <label for="cardNumber">Enter Your Card Number</label>
-                                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number">
-                            </div>
+                    <!-- Contact Information -->
+                    <h2 class="contact-title">Contact Information</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your full name">
                         </div>
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="phoneNumber">Phone Number</label>
-                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group">
-                                <label for="idNumber">Enter Your ID Number</label>
-                                <input type="text" id="idNumber" name="idNumber" placeholder="Enter your ID number">
-                            </div>
+
+                        <div class="form-group">
+                            <label for="cardnumber">Enter Your Card Number</label>
+                            <input type="text" id="cardnumber" placeholder="Enter your card number">
                         </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id">Enter Your ID Number</label>
+                            <input type="text" id="id" placeholder="Enter your ID number">
+                        </div>
+
                         <div class="form-group">
                             <label for="email">Enter Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <input type="email" id="email" placeholder="Enter your email">
                         </div>
-                    </div>
 
-                    <!-- Form action buttons -->
-                    <div class="form-buttons">
-                        <button type="submit" class="btn-submit">Submit Details</button>
-                        <button type="button" class="btn-clear">Clear Selection</button>
-                        <button type="button" class="btn-calculate">Calculate Cost</button>
-                    </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-submit">Submit Details</button>
+                            <button type="reset" class="btn-reset">Clear Selection</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
 
-                <!-- Cost summary sidebar -->
+            <!-- Right Section: Cost Summary -->
+            <div class="right-section">
                 <div class="cost-summary">
-                    <h3 class="summary-title">Cost Summary</h3>
-                    
+                    <h2>Cost Summary</h2>
                     <div class="summary-row">
-                        <span class="summary-label">Selected Courses:</span>
+                        <span>Selected Courses:</span>
                         <span class="summary-value">0</span>
                     </div>
-                    
                     <div class="summary-row">
-                        <span class="summary-label">Subtotal:</span>
+                        <span>Subtotal:</span>
                         <span class="summary-value">R0</span>
                     </div>
-                    
                     <div class="summary-row">
-                        <span class="summary-label">Discount (0%):</span>
+                        <span>Discount (10%):</span>
                         <span class="summary-value">R0</span>
                     </div>
-                    
                     <div class="summary-row">
-                        <span class="summary-label">VAT (15%):</span>
+                        <span>VAT (15%):</span>
                         <span class="summary-value">R0</span>
                     </div>
-                    
-                    <div class="summary-row">
-                        <span class="summary-label">Total:</span>
+                    <div class="summary-row total">
+                        <span>Total:</span>
                         <span class="summary-value">R0</span>
                     </div>
-
-                    <!-- View course buttons -->
-                    <div class="view-buttons">
-                        <button class="btn-view active">View 6-Week Courses</button>
-                        <button class="btn-view">View 6-Month Courses</button>
+                    <div class="course-links">
+                        <a href="#" class="link">View 6-Week Courses</a>
+                        <a href="#" class="link">View 6-Month Courses</a>
                     </div>
-
-                    <!-- Help section -->
                     <div class="help-section">
-                        <div class="help-icon">❓</div>
-                        <div class="help-title">Need Help?</div>
-                        <a href="#contact" class="contact-link">Contact Us</a>
+                        <h3>Need Help?</h3>
+                        <a href="#" class="btn-help">Contact Us</a>
                     </div>
                 </div>
+                <button class="btn-calculate">Calculate Cost</button>
             </div>
-        </section>
+        </div>
     </main>
 
-    <!-- Site footer with links and contact information -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <!-- Company information section -->
             <div class="footer-section">
-                <div class="footer-logo">
-                    <div class="footer-logo-icon">EN</div>
-                    Empowering the Nation
-                </div>
-                <p class="footer-description">Transforming lives through quality education and skills development. Join us on a journey to empower yourself and your community.</p>
-                <div class="footer-social">
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Instagram">📷</a>
-                    <a href="#" title="LinkedIn">💼</a>
+                <h3>Empowering the Nation</h3>
+                <p>Transform your life through quality education and skills development. Join us on a journey to empower yourself and your community.</p>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">📷</a>
+                    <a href="#">in</a>
                 </div>
             </div>
 
-            <!-- Quick links section -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Courses</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Courses</a></li>
                     <li><a href="#">Register</a></li>
                 </ul>
             </div>
 
-            <!-- Course links section -->
             <div class="footer-section">
-                <h3>Our Courses</h3>
+                <h3>6-Week Courses</h3>
                 <ul>
-                    <li><a href="#">6-Week Courses</a></li>
-                    <li><a href="#">6-Month Courses</a></li>
                     <li><a href="#">Child Minding</a></li>
                     <li><a href="#">Cooking</a></li>
                     <li><a href="#">Garden Maintenance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>6-Month Courses</h3>
+                <ul>
                     <li><a href="#">First Aid</a></li>
                     <li><a href="#">Sewing</a></li>
                     <li><a href="#">Landscaping</a></li>
@@ -271,24 +221,25 @@
                 </ul>
             </div>
 
-            <!-- Contact information section -->
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <ul>
-                    <li>- Venue 1: 123 Main Street, Sandton, Johannesburg</li>
-                    <li>- Venue 2: 456 Elm Avenue, Soweto, Johannesburg</li>
-                    <li>- Venue 3: 789 Oak Road, Randburg, Johannesburg</li>
-                    <li>📞 +27 11 123 4567</li>
-                    <li>✉️ info@empoweringthenation.co.za</li>
-                    <li>🕒 Mon-Fri: 8:00 AM - 5:00 PM</li>
-                </ul>
+                <p><strong>Head Office:</strong> 123 Main Street, Johannesburg</p>
+                <p><strong>Branch 2:</strong> 456 Tree Avenue, Soweto</p>
+                <p><strong>Branch 3:</strong> 789 Oak Road, Randburg</p>
+                <p><strong>Phone:</strong> +27 11 123 4567 • +27 34 584 1154</p>
+                <p><strong>Email:</strong> info@empoweringthenation.co.za</p>
+                <p>contact@empoweringthenation.co.za</p>
+                <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
             </div>
         </div>
 
-        <!-- Copyright information -->
         <div class="footer-bottom">
-            <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
-            <p>Privacy Policy | Terms of Service | Cookie Policy</p>
+            <p>&copy; 2023 Empowering the Nation. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
         </div>
     </footer>
 </body>
