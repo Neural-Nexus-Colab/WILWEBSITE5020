@@ -37,95 +37,138 @@ header .container {
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
+        /* Navigation */
+        .navbar {
+            background-color: #0f5a52;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-.logo i {
-    font-size: 28px;
-}
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
 
-nav a:hover,
-nav a.active {
-    background: rgba(255,255,255,0.2);
-}
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
 
-.header-buttons {
-    display: flex;
-    gap: 10px;
-}
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s;
+        }
 
-.btn-primary,
-.btn-secondary,
-.btn-white,
-.btn-outline {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.3s;
-}
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
 
-.btn-primary {
-    background: #4a90e2;
-    color: white;
-}
+        /* Dropdown */
+        .nav-item {
+            position: relative;
+        }
 
-.btn-primary:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-}
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border-radius: 4px;
+            margin-top: 2px;
+            padding: 5px 0;
+        }
 
-.btn-secondary {
-    background: white;
-    color: #0d5a5a;
-}
+        .dropdown a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
 
-.btn-secondary:hover {
-    background: #f0f0f0;
-}
+        .dropdown a:hover {
+            background-color: #f5f5f5;
+        }
 
-.btn-white {
-    background: white;
-    color: #0d5a5a;
-    margin: 5px;
-}
+        .nav-item:hover .dropdown {
+            display: block;
+        }
 
-.btn-white:hover {
-    background: #f0f0f0;
-    transform: translateY(-2px);
-}
+        .nav-link.has-dropdown {
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
 
-.btn-outline {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
+        .nav-link.has-dropdown::after {
+            content: ' ▾';
+            font-size: 0.8em;
+        }
 
-.btn-outline:hover {
-    background: white;
-    color: #0d5a5a;
-}
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-signup, .btn-login {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-signup {
+            background-color: white;
+            color: #0f5a52;
+        }
+
+        .btn-login {
+            background-color: #4a9d95;
+            color: white;
+        }
+
+        .btn-signup:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-login:hover {
+            background-color: #3d8580;
+        }
 
 /* Hero Section */
 .hero {
