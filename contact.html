@@ -7,26 +7,32 @@
     <link href="css-assets/contact.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <span class="logo-icon">🏛️</span>
-                <span class="logo-text">Empowering the Nation</span>
-            </div>
-            <nav class="navbar-menu">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Courses</a>
-                <a href="#" class="nav-link active">Contact</a>
-                <a href="#" class="nav-link">Register</a>
-            </nav>
-            <div class="navbar-buttons">
-                <button class="btn btn-signup">Sign Up</button>
-                <button class="btn btn-login">Login</button>
-            </div>
+   <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="_images/logo/image.png" alt="Logo" />
+          <span>Empowering the Nation</span>
         </div>
-    </header>
+        <ul class="nav-menu">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link has-dropdown">Courses</a>
+            <div class="dropdown">
+              <a href="weekcourses.html">Six Week</a>
+              <a href="6monthcourses.html">Six Month</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="registercourse.html">Register</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn-signup" id="navSignup">Sign Up</button>
+          <button class="btn-login" id="navLogin">Login</button>
+        </div>
+      </div>
+    </nav>
 
     <!-- Main Content -->
     <main>
@@ -126,7 +132,7 @@
                     </div>
 
                     <div class="contact-logo">
-                        <img src="placeholder-logo.svg" alt="Empowering the Nation Logo">
+                        <img src="_images/logo/image.png" alt="Empowering the Nation Logo">
                     </div>
                 </div>
             </div>
@@ -167,80 +173,94 @@
         <section class="social-section">
             <h2>Connect With Us</h2>
             <p>Follow us on social media to stay updated with our latest courses, events, and success stories.</p>
-            <div class="social-links">
-                <a href="#" class="social-icon" aria-label="Facebook">f</a>
-                <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
-                <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
-                <a href="#" class="social-icon" aria-label="YouTube">▶</a>
-            </div>
+             <div class="social-icons">
+            <a href="" class="social-icon">
+              <img src="_images/icons/facebook.png" alt="Facebook icon" />
+            </a>
+            <a href="" class="social-icon">
+              <img src="_images/icons/twitter.png" alt="Twitter icon" />
+            </a>
+            <a href="" class="social-icon">
+              <img src="_images/icons/instagram.png" alt="Instagram icon" />
+            </a>
+            <a href="" class="social-icon">
+              <img src="_images/icons/linkedin.png" alt="LinkedIn icon" />
+            </a>
+          </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Empowering the Nation</h3>
-                <p>Transforming lives through quality education and skills development. Join us on the journey to empower yourself and your community.</p>
-                <div class="footer-social">
-                    <a href="#">f</a>
-                    <a href="#">𝕏</a>
-                    <a href="#">📷</a>
-                    <a href="#">in</a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Our Courses</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>6-Week Courses</h3>
-                <ul>
-                    <li><a href="#">Child Minding</a></li>
-                    <li><a href="#">Cooking</a></li>
-                    <li><a href="#">Gender Maintenance</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>6-Month Courses</h3>
-                <ul>
-                    <li><a href="#">First Aid</a></li>
-                    <li><a href="#">Sewing</a></li>
-                    <li><a href="#">Landscaping</a></li>
-                    <li><a href="#">Life Skills</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>📍 Venue 1: 123 Main Street, Sanction, Johannesburg</p>
-                <p>📍 Venue 2: 456 Oak Avenue, Standerton</p>
-                <p>📍 Venue 3: 789 Oak Road, Randburg, Johannesburg</p>
-                <p>📞 +27 11 123 4567 / +27 24 584 1154</p>
-                <p>✉️ info@empoweringthenation.co.za</p>
-                <p>✉️ contact@empoweringthenation.co.za</p>
-                <p>🕐 Mon-Fri: 8:00 AM - 5:00 PM</p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Empowering the Nation</h3>
+          <p>
+            Transforming lives through quality education and skills development.
+            Join us on a journey to empower yourself and your community.
+          </p>
+          <div class="social-icons">
+            <a href="" class="social-icon">f</a>
+            <a href="" class="social-icon">𝕏</a>
+            <a href="" class="social-icon">📷</a>
+            <a href="" class="social-icon">in</a>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registercourse.html">Register</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h3>6-Week Courses</h3>
+          <ul>
+            <li><a href="weekcourses.html">Child Minding</a></li>
+            <li><a href="weekcourses.html">Cooking</a></li>
+            <li><a href="weekcourses.html">Garden Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>6-Month Courses</h3>
+          <ul>
+            <li><a href="6monthcourses.html">First Aid</a></li>
+            <li><a href="6monthcourses.html">Sewing</a></li>
+            <li><a href="6monthcourses.html">Landscaping</a></li>
+            <li><a href="6monthcourses.html">Life Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><strong>Venue 1:</strong> 123 Main Street, Johannesburg</p>
+            <p><strong>Venue 2:</strong> 456 Elm Avenue, Soweto</p>
+            <p><strong>Venue 3:</strong> 789 Oak Road, Randburg</p>
+            <p><strong>Phone:</strong> +27 11 123 4567<br />+27 24 584 1154</p>
+            <p>
+              <strong>Email:</strong>
+              info@empoweringthenation.co.za<br />contact@empoweringthenation.co.za
+            </p>
+            <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookie Policy</a>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="js-assets/scripts.js"></script>
+  </body>
 </html>
