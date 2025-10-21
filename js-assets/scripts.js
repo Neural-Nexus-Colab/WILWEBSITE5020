@@ -41,4 +41,3 @@ document.getElementById("contact").addEventListener("click", function () {
 
 ///---End of homepage Navigation
 
-
