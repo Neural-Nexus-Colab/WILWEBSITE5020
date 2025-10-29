@@ -1,3 +1,7 @@
+// Wait for page to fully load before running ANY script
+document.addEventListener('DOMContentLoaded', function() {
+
+
 //Navigation Section
 function Navigate(pageUrl) {
   window.location.href = pageUrl;
@@ -42,3 +46,4 @@ document.getElementById("contact").addEventListener("click", function () {
 });
 
 ///---End of homepage Navigation
+});
