@@ -1,5 +1,4 @@
 //Navigation Section
-
 function Navigate(pageUrl) {
   window.location.href = pageUrl;
 }
@@ -14,6 +13,9 @@ document.getElementById("navLogin").addEventListener("click", function () {
 });
 
 //---Other screens navigation
+document.getElementById("home").addEventListener("click", function () {
+  Navigate("homepage.html");
+});
 document.getElementById("navAbout").addEventListener("click", function () {
   Navigate("about.html");
 });
@@ -40,4 +42,3 @@ document.getElementById("contact").addEventListener("click", function () {
 });
 
 ///---End of homepage Navigation
-
