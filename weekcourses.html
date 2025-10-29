@@ -1,23 +1,13 @@
-<!--
-    Code Attribution
-    Title: Web Development (Introduction) [WEDE5020]
-    Author: The Independent Institute of Education (Pty) Ltd
-    Date Accessed: 12 September 2025
-    Date Created: 2025
-    Version: Not specified
-    Availability: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true
--->
-<!DOCTYPE html><!--Lets the browser know which version of html the document uses-->
-<html lang="en"><!--Sets the attribute lang(language) to english-->
-<head><!--Content in the head is used to tell browser important information on the page-->
-    <meta charset="UTF-8"><!-- meta elements contains a variety of different attributes to communicate important information to the browser and charset is an attribute that tells the style of keyboard used to code -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport indicates that the browser should not zoom in on the page and should respect any CSS response code and the content allows the website to fit any screen-->
-    <title>Empowering the Nation - 6-Week Courses</title><!-- title is not displayed on the page itself but its what shows on the browser tab and in the search listings on google and other search engines  -->
-      <link href="css-assets/weekcourses.css" rel="stylesheet"> <!--Linking the css file to the html file-->
-    </head>
-    <body><!-- Holds all the content for the display on the page itself-->
-    
-  <!-- Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empowering the Nation - 6-Week Courses</title>
+    <link href="css-assets/courses.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
@@ -38,196 +28,243 @@
           <li><a href="registercourse.html">Register</a></li>
         </ul>
         <div class="auth-buttons">
-          <button class="btn-signup" id="navSignup">Sign Up</button>
-          <button class="btn-login" id="navLogin">Login</button>
+          <button class="btn-signup">Sign Up</button>
+          <button class="btn-login">Login</button>
         </div>
       </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>6-Week Courses</h1>
+        <p class="hero-description">
+          Our short-term courses are designed to provide practical skills in a
+          condensed timeframe. Perfect for those looking to quickly gain new
+          abilities or enhance existing ones.
+        </p>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>6-Week Courses</h1>
-                <p class="hero-description">Our short-term courses are designed to provide practical skills in a condensed timeframe. Perfect for those looking to quickly gain new abilities or enhance existing ones.</p>
+    <!-- Courses Grid -->
+    <section class="courses">
+      <div class="container">
+        <div class="courses-grid">
+          <!-- Cooking Course -->
+          <div class="course-card">
+            <div class="course-image">
+              <img
+                src="_images/courses/cooking-placeholder.jpg"
+                alt="Cooking course"
+              />
             </div>
-        </section>
-
-        <!-- Courses Grid -->
-        <section class="courses">
-            <div class="container">
-                <div class="courses-grid">
-                    <!-- Cooking Course -->
-                    <div class="course-card">
-                        <div class="course-image">
-                            <img src="_images/cooking.jpg" alt="Cooking course" >
-                        </div>
-                        <div class="course-content">
-                            <div class="course-header">
-                                <h3>Cooking</h3>
-                                <span class="course-duration">6-Weeks</span>
-                            </div>
-                            <div class="course-details">
-                                <div class="course-info">
-                                    <span class="info-item"><span class="icon">⏱</span> x2 Days</span>
-                                    <span class="info-item"><span class="icon">👥</span> All Levels</span>
-                                </div>
-                            </div>
-                            <div class="course-footer">
-                                <div class="price">
-                                    <span class="amount">R750</span>
-                                    <span class="price-note">Per Tax Bundle</span>
-                                </div>
-                                <button class="btn-calculate">Calculate Cost</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Garden Maintenance Course -->
-                    <div class="course-card">
-                        <div class="course-image">
-                            <img src="_images/Gardening.png" alt="Garden maintenance course">
-                        </div>
-                        <div class="course-content">
-                            <div class="course-header">
-                                <h3>Garden Maintenance</h3>
-                                <span class="course-duration">6-Weeks</span>
-                            </div>
-                            <div class="course-details">
-                                <div class="course-info">
-                                    <span class="info-item"><span class="icon">⏱</span> x2 Days</span>
-                                    <span class="info-item"><span class="icon">👥</span> Beginner to Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="course-footer">
-                                <div class="price">
-                                    <span class="amount">R750</span>
-                                    <span class="price-note">Per Tax Bundle</span>
-                                </div>
-                                <button class="btn-calculate">Calculate Cost</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Child Minding Course -->
-                    <div class="course-card">
-                        <div class="course-image">
-                            <img src="_images/Children.jpeg" alt="Child minding course">
-                        </div>
-                        <div class="course-content">
-                            <div class="course-header">
-                                <h3>Child Minding</h3>
-                                <span class="course-duration">6-Weeks</span>
-                            </div>
-                            <div class="course-details">
-                                <div class="course-info">
-                                    <span class="info-item"><span class="icon">⏱</span> x2 Days</span>
-                                    <span class="info-item"><span class="icon">👥</span> Beginner Friendly</span>
-                                </div>
-                            </div>
-                            <div class="course-footer">
-                                <div class="price">
-                                    <span class="amount">R750</span>
-                                    <span class="price-note">Per Tax Bundle</span>
-                                </div>
-                                <button class="btn-calculate">Calculate Cost</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="course-content">
+              <div class="course-header">
+                <h3>Cooking</h3>
+                <span class="course-duration">6-Weeks</span>
+              </div>
+              <div class="course-details">
+                <div class="course-info">
+                  <span class="info-item"
+                    ><span class="icon">⏱</span> x2 Days</span
+                  >
+                  <span class="info-item"
+                    ><span class="icon">👥</span> All Levels</span
+                  >
                 </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Section -->
-        <section class="why-choose">
-            <div class="container">
-                <div class="why-choose-content">
-                    <div class="why-choose-text">
-                        <h2>Why Choose Our 6-Week Courses?</h2>
-                        <p>Our short-term courses are designed to provide maximum value in minimal time. Perfect for busy individuals seeking to quickly teach new skills or enhance existing abilities.</p>
-                        <ul class="benefits-list">
-                            <li>Practical, hands-on learning experiences</li>
-                            <li>Experienced instructors with industry knowledge</li>
-                            <li>Small class sizes for personalized attention</li>
-                            <li>Flexible scheduling options (weekdays and weekend classes)</li>
-                            <li>Certificate of completion for all courses</li>
-                        </ul>
-                    </div>
-                    
-                         <img src="_images/Green pen.jpeg" alt="Green pen">
-                    
-                    </div>
+              </div>
+              <div class="course-footer">
+                <div class="price">
+                  <span class="amount">R750</span>
+                  <span class="price-note">for full course</span>
                 </div>
+                <button class="btn-calculate">View More</button>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📅</div>
-                        <h3>Flexible Scheduling</h3>
-                        <p>Choose from morning, afternoon, or evening classes to fit your busy lifestyle (weekend options also available).</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Job Placement Assistance</h3>
-                        <p>Access to our network of employers and job placement support after successful course completion.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💰</div>
-                        <h3>Affordable Pricing</h3>
-                        <p>Competitive course fees with payment plans available to make learning accessible and easy for qualifying students.</p>
-                    </div>
+          <!-- Garden Maintenance Course -->
+          <div class="course-card">
+            <div class="course-image">
+              <img
+                src="_images/courses/garden-placeholder.jpg"
+                alt="Garden maintenance course"
+              />
+            </div>
+            <div class="course-content">
+              <div class="course-header">
+                <h3>Garden Maintenance</h3>
+                <span class="course-duration">6-Weeks</span>
+              </div>
+              <div class="course-details">
+                <div class="course-info">
+                  <span class="info-item"
+                    ><span class="icon">⏱</span> x2 Days</span
+                  >
+                  <span class="info-item"
+                    ><span class="icon">👥</span> Beginner to Intermediate</span
+                  >
                 </div>
-            </div>
-        </section>
-
-        <!-- Other Courses Section -->
-        <section class="other-courses">
-            <div class="container">
-                <h2>Explore Our Other Course Options</h2>
-                <p class="section-subtitle">Looking for more comprehensive training? Check out our longer-term programs.</p>
-                <div class="other-courses-grid">
-                    <div class="other-course-card">
-                        <div class="other-course-icon">🎓</div>
-                        <h3>6-Month Courses</h3>
-                        <p>In-depth training programs including First Aid, Sewing, Landscaping, and Life Skills.</p>
-                        <button class="btn-learn">Learn More</button>
-                    </div>
-                    <div class="other-course-card">
-                        <div class="other-course-icon">🏠</div>
-                        <h3>Back to Home</h3>
-                        <p>Return to our main page to explore all the opportunities Empowering the Nation offers.</p>
-                        <button class="btn-visit">Visit Home</button>
-                    </div>
-                    <div class="other-course-card">
-                        <div class="other-course-icon">🧮</div>
-                        <h3>Cost Calculator</h3>
-                        <p>Use our interactive tools to calculate course fees and explore payment options.</p>
-                        <button class="btn-calculate-alt">Calculate Now</button>
-                    </div>
+              </div>
+              <div class="course-footer">
+                <div class="price">
+                  <span class="amount">R750</span>
+                  <span class="price-note">for full course</span>
                 </div>
+                <button class="btn-calculate">View More</button>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- CTA Section -->
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to Enroll?</h2>
-                <p>Take the first step toward your new skills and career opportunities.</p>
-                <div class="cta-buttons">
-                    <button class="btn-apply-now">Apply Now</button>
-                    <button class="btn-contact">Contact an Advisor</button>
+          <!-- Child Minding Course -->
+          <div class="course-card">
+            <div class="course-image">
+              <img
+                src="_images/courses/childminding-placeholder.jpg"
+                alt="Child minding course"
+              />
+            </div>
+            <div class="course-content">
+              <div class="course-header">
+                <h3>Child Minding</h3>
+                <span class="course-duration">6-Weeks</span>
+              </div>
+              <div class="course-details">
+                <div class="course-info">
+                  <span class="info-item"
+                    ><span class="icon">⏱</span> x2 Days</span
+                  >
+                  <span class="info-item"
+                    ><span class="icon">👥</span> Beginner Friendly</span
+                  >
                 </div>
+              </div>
+              <div class="course-footer">
+                <div class="price">
+                  <span class="amount">R750</span>
+                  <span class="price-note">for full course</span>
+                </div>
+                <button class="btn-calculate">View More</button>
+              </div>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <!-- Footer -->
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="why-choose-content">
+          <div class="why-choose-text">
+            <h2>Why Choose Our 6-Week Courses?</h2>
+            <p>
+              Our short-term courses are designed to provide maximum value in
+              minimal time. Perfect for busy individuals seeking to quickly
+              teach new skills or enhance existing abilities.
+            </p>
+            <ul class="benefits-list">
+              <li>Practical, hands-on learning experiences</li>
+              <li>Experienced instructors with industry knowledge</li>
+              <li>Small class sizes for personalized attention</li>
+              <li>
+                Flexible scheduling options (weekdays and weekend classes)
+              </li>
+              <li>Certificate of completion for all courses</li>
+            </ul>
+          </div>
+          <img src="_images/why-choose/pen-placeholder.jpg" alt="Green pen" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Flexible Scheduling</h3>
+            <p>
+              Choose from morning, afternoon, or evening classes to fit your
+              busy lifestyle (weekend options also available).
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Job Placement Assistance</h3>
+            <p>
+              Access to our network of employers and job placement support after
+              successful course completion.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Affordable Pricing</h3>
+            <p>
+              Competitive course fees with payment plans available to make
+              learning accessible and easy for qualifying students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Courses Section -->
+    <section class="other-courses">
+      <div class="container">
+        <h2>Explore Our Other Course Options</h2>
+        <p class="section-subtitle">
+          Looking for more comprehensive training? Check out our longer-term
+          programs.
+        </p>
+        <div class="other-courses-grid">
+          <div class="other-course-card">
+            <div class="other-course-icon">🎓</div>
+            <h3>6-Month Courses</h3>
+            <p>
+              In-depth training programs including First Aid, Sewing,
+              Landscaping, and Life Skills.
+            </p>
+            <button class="btn-learn">Learn More</button>
+          </div>
+          <div class="other-course-card">
+            <div class="other-course-icon">🏠</div>
+            <h3>Back to Home</h3>
+            <p>
+              Return to our main page to explore all the opportunities
+              Empowering the Nation offers.
+            </p>
+            <button class="btn-visit">Visit Home</button>
+          </div>
+          <div class="other-course-card">
+            <div class="other-course-icon">🧮</div>
+            <h3>Cost Calculator</h3>
+            <p>
+              Use our interactive tools to calculate course fees and explore
+              payment options.
+            </p>
+            <button class="btn-calculate-alt">Calculate Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Enroll?</h2>
+        <p>
+          Take the first step toward your new skills and career opportunities.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn-apply-now">Apply Now</button>
+          <button class="btn-contact">Contact an Advisor</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
@@ -236,22 +273,23 @@
             Transforming lives through quality education and skills development.
             Join us on a journey to empower yourself and your community.
           </p>
-               <div class="social-icons">
+          <!-- Social media icons section -->
+          <div class="social-icons">
             <a href="" class="social-icon">
-              <img src="_images/icons/facebook.png" alt="Facebook icon" />
+              <img src="_images/footer/facebook.png" alt="Facebook icon" />
             </a>
             <a href="" class="social-icon">
-              <img src="_images/icons/twitter.png" alt="Twitter icon" />
+              <img src="_images//footer/twitter.png" alt="Twitter icon" />
             </a>
             <a href="" class="social-icon">
-              <img src="_images/icons/instagram.png" alt="Instagram icon" />
+              <img src="_images/footer/instagram.png" alt="Instagram icon" />
             </a>
             <a href="" class="social-icon">
-              <img src="_images/icons/linkedin.png" alt="LinkedIn icon" />
+              <img src="_images/footer/linkedin.png" alt="LinkedIn icon" />
             </a>
           </div>
         </div>
-
+        <!-- Quick Links -->
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
@@ -261,7 +299,7 @@
             <li><a href="registercourse.html">Register</a></li>
           </ul>
         </div>
-
+        <!-- Week Courses screens -->
         <div class="footer-section">
           <h3>6-Week Courses</h3>
           <ul>
@@ -270,7 +308,7 @@
             <li><a href="weekcourses.html">Garden Maintenance</a></li>
           </ul>
         </div>
-
+        <!-- Month courses section -->
         <div class="footer-section">
           <h3>6-Month Courses</h3>
           <ul>
@@ -280,26 +318,65 @@
             <li><a href="6monthcourses.html">Life Skills</a></li>
           </ul>
         </div>
-
-       <div class="footer-section">
+        <!-- Contact Section -->
+        <div class="footer-section">
           <h3>Contact Us</h3>
           <div class="contact-info">
-            <p><strong>Venue 1:</strong> Johannesburg West 123 Rivonia Road, Sandton</p>
-            <p><strong>Venue 2:</strong>  Johannesburg East 456 Main Street, Rosevelt</p>
-            <p><strong>Venue 3:</strong>  Johannesburg North 78 Springs Road, Bedfordview </p>
-            <p><strong>Venue 1-</strong> 067 887 9321</p>
-            <p><strong>Venue 2-</strong> 067 887 9321</p>
-            <p><strong>Venue 3-</strong> 067 887 9321</p>
-            <p>
+            <div class="contact-group">
+              <img
+                src="_images/footer/pin.png"
+                alt="Location"
+                class="contact-icon"
+              />
+              <div>
+                <p>Johannesburg West 123 Rivonia Road, Sandton</p>
+                <p>Johannesburg East 456 Main Street, Rosevelt</p>
+                <p>Johannesburg North 78 Springs Road, Bedfordview</p>
+              </div>
+            </div>
 
-              empoweringthenation@north.co.za<br />empoweringthenation@east.co.za<br />empoweringthenation@west.co.za
+            <div class="contact-group">
+              <img
+                src="_images/footer/phone.png"
+                alt="Phone"
+                class="contact-icon"
+              />
+              <div>
+                <p>067 887 9321</p>
+                <p>072 045 7896</p>
+                <p>082 587 3344</p>
+              </div>
+            </div>
 
-            </p>
-            <p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</p><p><strong>Saturday</strong>:</strong>  9:00 AM - 1:00 PM</p><p><strong>Sunday</strong>:</strong>Closed</p>
+            <div class="contact-group">
+              <img
+                src="_images/footer/email.png"
+                alt="Email"
+                class="contact-icon"
+              />
+              <div>
+                <p>empoweringthenation@north.co.za</p>
+                <p>empoweringthenation@east.co.za</p>
+                <p>empoweringthenation@west.co.za</p>
+              </div>
+            </div>
+
+            <div class="contact-group">
+              <img
+                src="_images/footer/clock.png"
+                alt="Hours"
+                class="contact-icon"
+              />
+              <div>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 1:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
+      <!-- Bottom of the footer -->
       <div class="footer-bottom">
         <p>&copy; 2025 Empowering the Nation. All rights reserved.</p>
         <div class="footer-links">
@@ -312,21 +389,3 @@
     <script src="js-assets/scripts.js"></script>
   </body>
 </html>
-
-<!-- 
-  - The Independent Institute of Education, 2025. Web Development (Introduction) [WEDE5020]. nt. [online via internal VLE] The Independent Institute of Education. Available at:< https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true > [Accessed Date: 13 August 2025]. 
-
-   - HTML and CSS Guidebook, 2024. Sematic Elements. [online] Available at: < https://htmlandcssguidebook.com/html/html5-semantic/#div > [Accessed 16 August 2025]. 
-
-   - W3Schools, 2024. HTML Footer Tag. [online] Available at: < https://www.w3schools.com/tags/tag_footer.asp > [Accessed 12 September 2025].
-
-   - W3Schools, 2024. HTML div Tag. [online] Available at: < https://www.w3schools.com/tags/tag_div.asp > [Accessed 12 September 2025].
-
-   - W3Schools, 2024. HTML Nav Tag. [online] Available at: < https://www.w3schools.com/tags/tag_nav.asp > [Accessed 12 September 2025].
-
-   - W3Schools, 2024. HTML Header Tag. [online] Available at: < https://www.w3schools.com/tags/tag_header.asp > [Accessed 12 September 2025].
-
-   - W3Schools, 2024. HTML Main Tag. [online] Available at: < https://www.w3schools.com/tags/tag_main.asp > [Accessed 12 September 2025].
-
-   - W3Schools, 2024. HTML Symbols. [online] Available at: < https://www.w3schools.com/html/html_symbols.asp> [Accessed 12 September 2025].
--->
