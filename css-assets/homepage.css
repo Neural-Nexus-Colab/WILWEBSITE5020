@@ -624,17 +624,34 @@ body {
 }
 
 .social-icon:hover {
-  background-color: rgba(255, 255,  255,  0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.contact-info {
+
+/* Footer Contact Info Styling */
+.contact-group {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-group div {
+  flex: 1;
+}
+
+.contact-group p {
   font-size: 13px;
-  line-height: 2;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 5px;
 }
-
-.contact-info p {
-  margin-bottom: 8px;
-}
-
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 30px;
