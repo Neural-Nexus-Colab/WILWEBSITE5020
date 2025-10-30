@@ -503,12 +503,27 @@ header .container {
 }
 
 .cta-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
+.btn-cta {
+  background-color: white;
+  color: #0f5a52;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #f0f0f0;
+}
  /* Footer */
         .footer {
             background-color: #0f5a52;
