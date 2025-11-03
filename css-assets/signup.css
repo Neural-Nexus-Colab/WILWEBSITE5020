@@ -158,9 +158,9 @@ body {
 
 /* Form Container */
 .form-container {
-  max-width: 580px;
+  max-width: 600px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #7dd8cc 0%, #6bc9bd 100%);
+  background: linear-gradient(135deg, #6bc8c3 20%, #6bc9bd 100%);
   padding: 40px;
   border-radius: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -213,6 +213,7 @@ body {
   color: white;
   font-weight: 600;
   border-radius: 25px;
+  outline: #999;
   transition: background-color 0.3s;
 }
 
