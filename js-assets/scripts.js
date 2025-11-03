@@ -179,6 +179,13 @@ const ViewL = document.getElementById("ViewL");
   const CalcD = document.getElementById("CalcD");
   const CalcW = document.getElementById("CalcW");
    const CalcA = document.getElementById("CalcA");
+  const calw = document.getElementById("calw")
+   
+  if (calw) {
+    calw.addEventListener("click", function () {
+  Navigate("registercourse.html")
+});
+  }
 
   if (CalcA) {
     CalcA.addEventListener("click", function () {
@@ -203,6 +210,8 @@ const ViewL = document.getElementById("ViewL");
       Navigate("registercourse.html");
     });
   }
+
+
   
   ///---End of detailed 6 week courses Navigation
 
