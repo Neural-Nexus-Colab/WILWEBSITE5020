@@ -502,6 +502,13 @@ header .container {
     margin-bottom: 40px;
 }
 
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .btn-cta {
   background-color: white;
   color: #0f5a52;
@@ -517,7 +524,6 @@ header .container {
 .btn-cta:hover {
   background-color: #f0f0f0;
 }
-
  /* Footer */
         .footer {
             background-color: #0f5a52;
