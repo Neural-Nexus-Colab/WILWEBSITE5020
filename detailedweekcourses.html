@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6-Week Courses - Empowering the Nation</title>
-    <link href="css-assets/detailedweekcourses.css" rel="stylesheet" />
-</head>
-<body>
-   <!-- Navigation -->
+    <link href="css-assets/courses.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
@@ -34,197 +34,267 @@
       </div>
     </nav>
 
-
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>6-Week Courses</h1>
-                <p class="subtitle">Our short-term courses are designed to provide practical skills in a condensed timeframe. Perfect for those looking to quickly gain new skillsets or enhance existing ones.</p>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>6-Week Courses</h1>
+          <p class="subtitle">
+            Our short-term courses are designed to provide practical skills in a
+            condensed timeframe. Perfect for those looking to quickly gain new
+            skillsets or enhance existing ones.
+          </p>
+        </div>
+      </section>
+
+      <!-- Courses Grid -->
+      <section class="courses-section">
+        <div class="container">
+          <div class="courses-grid">
+            <!-- Cooking Course -->
+            <div class="course-card">
+              <div class="course-header">
+                <h2>Cooking</h2>
+                <span class="duration">6-Weeks</span>
+              </div>
+              <div class="course-meta">
+                <span>👥 42 Days</span>
+                <span>📊 All Levels</span>
+              </div>
+              <div class="course-content">
+                <h3>Course Curriculum</h3>
+                <p>
+                  Master fundamental cooking techniques, learn food safety, meal
+                  planning, and nutritious basics. The course includes hands-on
+                  cooking sessions, understanding kitchen equipment, and recipe
+                  preparation.
+                </p>
+
+                <h3>Intended Outcomes</h3>
+                <ul class="outcomes-list">
+                  <li>✓ Nutritional requirements for a healthy body</li>
+                  <li>✓ Types of meals, carbohydrates and vegetables</li>
+                  <li>✓ Planning meals</li>
+                  <li>✓ Tasty and nutritious recipes</li>
+                  <li>✓ Preparation and cooking of meals</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <div class="price">R750</div>
+                <div class="tax">*No Tax Incl</div>
+                <button class="btn-calculate" id="CalcC">Calculate Cost</button>
+              </div>
             </div>
-        </section>
 
-        <!-- Courses Grid -->
-        <section class="courses-section">
-            <div class="container">
-                <div class="courses-grid">
-                    <!-- Cooking Course -->
-                    <div class="course-card">
-                        <div class="course-header">
-                            <h2>Cooking</h2>
-                            <span class="duration">6-Weeks</span>
-                        </div>
-                        <div class="course-meta">
-                            <span>👥 42 Days</span>
-                            <span>📊 All Levels</span>
-                        </div>
-                        <div class="course-content">
-                            <h3>Course Curriculum</h3>
-                            <p>Master fundamental cooking techniques, learn food safety, meal planning, and nutritious basics. The course includes hands-on cooking sessions, understanding kitchen equipment, and recipe preparation.</p>
-                            
-                            <h3>Intended Outcomes</h3>
-                            <ul class="outcomes-list">
-                                <li>✓ Nutritional requirements for a healthy body</li>
-                                <li>✓ Types of meals, carbohydrates and vegetables</li>
-                                <li>✓ Planning meals</li>
-                                <li>✓ Tasty and nutritious recipes</li>
-                                <li>✓ Preparation and cooking of meals</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <div class="price">R750</div>
-                            <div class="tax">*No Tax Incl</div>
-                            <button class="btn-calculate" id="CalcC">Calculate Cost</button>
-                        </div>
-                    </div>
+            <!-- Garden Maintenance Course -->
+            <div class="course-card">
+              <div class="course-header">
+                <h2>Garden Maintenance</h2>
+                <span class="duration">6-Weeks</span>
+              </div>
+              <div class="course-meta">
+                <span>👥 42 Days</span>
+                <span>📊 Beginner to Intermediate</span>
+              </div>
+              <div class="course-content">
+                <h3>Course Curriculum</h3>
+                <p>
+                  Learn essential gardening skills including soil preparation,
+                  planting techniques, plant management, and seasonal
+                  maintenance. Practical hands-on sessions covering the basics
+                  of plant nutrition garden work.
+                </p>
 
-                    <!-- Garden Maintenance Course -->
-                    <div class="course-card">
-                        <div class="course-header">
-                            <h2>Garden Maintenance</h2>
-                            <span class="duration">6-Weeks</span>
-                        </div>
-                        <div class="course-meta">
-                            <span>👥 42 Days</span>
-                            <span>📊 Beginner to Intermediate</span>
-                        </div>
-                        <div class="course-content">
-                            <h3>Course Curriculum</h3>
-                            <p>Learn essential gardening skills including soil preparation, planting techniques, plant management, and seasonal maintenance. Practical hands-on sessions covering the basics of plant nutrition garden work.</p>
-                            
-                            <h3>Intended Outcomes</h3>
-                            <ul class="outcomes-list">
-                                <li>✓ Water restrictions and the watering requirements of indigenous and exotic plants</li>
-                                <li>✓ Pruning and propagation of plants</li>
-                                <li>✓ Planting techniques for different plant types</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <div class="price">R750</div>
-                            <div class="tax">*No Tax Incl</div>
-                            <button class="btn-calculate" id="CalcG">Calculate Cost</button>
-                        </div>
-                    </div>
-
-                    <!-- Child Minding Course -->
-                    <div class="course-card">
-                        <div class="course-header">
-                            <h2>Child Minding</h2>
-                            <span class="duration">6-Weeks</span>
-                        </div>
-                        <div class="course-meta">
-                            <span>👥 42 Days</span>
-                            <span>📊 Beginner Friendly</span>
-                        </div>
-                        <div class="course-content">
-                            <h3>Course Curriculum</h3>
-                            <p>Learn essential childcare skills including child development, safety practices, educational activities, and effective communication with children. This course covers both theoretical knowledge and practical experience.</p>
-                            
-                            <h3>Skills Gained</h3>
-                            <ul class="outcomes-list">
-                                <li>✓ Birth to six-months old baby needs</li>
-                                <li>✓ Seven-months to one year old needs</li>
-                                <li>✓ Toddler needs</li>
-                                <li>✓ Educational toys</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <div class="price">R750</div>
-                            <div class="tax">*No Tax Incl</div>
-                            <button class="btn-calculate" id="CalcM">Calculate Cost</button>
-                        </div>
-                    </div>
-                </div>
+                <h3>Intended Outcomes</h3>
+                <ul class="outcomes-list">
+                  <li>
+                    ✓ Water restrictions and the watering requirements of
+                    indigenous and exotic plants
+                  </li>
+                  <li>✓ Pruning and propagation of plants</li>
+                  <li>✓ Planting techniques for different plant types</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <div class="price">R750</div>
+                <div class="tax">*No Tax Incl</div>
+                <button class="btn-calculate" id="CalcG">Calculate Cost</button>
+              </div>
             </div>
-        </section>
 
-        <!-- Why Choose Section -->
-        <section class="why-choose">
-            <div class="container">
-                <div class="why-content">
-                    <div class="why-text">
-                        <h2>Why Choose Our 6-Week Courses?</h2>
-                        <p>Our short-term courses are designed to provide maximum value in minimum time. Perfect for busy individuals seeking to quickly acquire new skills or enhance existing skills.</p>
-                        <ul class="benefits-list">
-                            <li>✓ Practical, hands-on learning experiences</li>
-                            <li>✓ Experienced instructors with industry knowledge</li>
-                            <li>✓ Small class sizes for personalized attention</li>
-                            <li>✓ Flexible scheduling options (weekday and weekend classes)</li>
-                            <li>✓ Certificate of completion for all graduates</li>
-                        </ul>
-                    </div>
-                    <img src="_images/Green pen.jpeg" alt="Green pen">
-                        <svg viewBox="0 0 200 200" class="pen-icon">
-                         
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- Child Minding Course -->
+            <div class="course-card">
+              <div class="course-header">
+                <h2>Child Minding</h2>
+                <span class="duration">6-Weeks</span>
+              </div>
+              <div class="course-meta">
+                <span>👥 42 Days</span>
+                <span>📊 Beginner Friendly</span>
+              </div>
+              <div class="course-content">
+                <h3>Course Curriculum</h3>
+                <p>
+                  Learn essential childcare skills including child development,
+                  safety practices, educational activities, and effective
+                  communication with children. This course covers both
+                  theoretical knowledge and practical experience.
+                </p>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📅</div>
-                        <h3>Flexible Scheduling</h3>
-                        <p>Choose from morning, afternoon, or evening classes to fit your busy lifestyle. Weekend options also available.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🤝</div>
-                        <h3>Job Placement Assistance</h3>
-                        <p>Access to our network of employers and job placement support after successful course completion.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💳</div>
-                        <h3>Affordable Pricing</h3>
-                        <p>Competitive course fees with payment plans available. Discounts offered for upfront payments.</p>
-                    </div>
-                </div>
+                <h3>Skills Gained</h3>
+                <ul class="outcomes-list">
+                  <li>✓ Birth to six-months old baby needs</li>
+                  <li>✓ Seven-months to one year old needs</li>
+                  <li>✓ Toddler needs</li>
+                  <li>✓ Educational toys</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <div class="price">R750</div>
+                <div class="tax">*No Tax Incl</div>
+                <button class="btn-calculate" id="CalcM">Calculate Cost</button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Other Options Section -->
-        <section class="other-options">
-            <div class="container">
-                <h2>Explore Our Other Course Options</h2>
-                <p class="section-subtitle">Looking for more comprehensive training? Check out our longer-term programs.</p>
-                <div class="options-grid">
-                    <div class="option-card">
-                        <div class="option-icon">🌳</div>
-                        <h3>6-Month Courses</h3>
-                        <p>In-depth comprehensive training in First Aid, Sewing, Landscaping, and Life Skills.</p>
-                        <button class="btn-learn" id="months">Learn More</button>
-                    </div>
-                    <div class="option-card">
-                        <div class="option-icon">🏠</div>
-                        <h3>Back to Home</h3>
-                        <p>Return to our main page to explore all the opportunities Empowering the Nation offers.</p>
-                        <button class="btn-learn" id="home">Visit Home</button>
-                    </div>
-                    <div class="option-card">
-                        <div class="option-icon">🧮</div>
-                        <h3>Cost Calculator</h3>
-                        <p>Use our interactive tool to calculate course fees and available payment options.</p>
-                        <button class="btn-learn" id="calc">Calculate Now</button>
-                    </div>
-                </div>
+      <!-- Why Choose Section -->
+      <section class="why-choose">
+        <div class="container">
+          <div class="why-choose-content">
+            <div class="why-choose-text">
+              <h2>Why Choose Our 6-Week Courses?</h2>
+              <p>
+                Our short-term courses are designed to provide maximum value in
+                minimal time. Perfect for busy individuals seeking to quickly
+                teach new skills or enhance existing abilities.
+              </p>
+              <ul class="benefits-list">
+                <li>Practical, hands-on learning experiences</li>
+                <li>Experienced instructors with industry knowledge</li>
+                <li>Small class sizes for personalized attention</li>
+                <li>
+                  Flexible scheduling options (weekdays and weekend classes)
+                </li>
+                <li>Certificate of completion for all courses</li>
+              </ul>
             </div>
-        </section>
+            <img src="_images/week/greenpenweekcourses.jpeg" alt="Green pen" />
+          </div>
+        </div>
+      </section>
 
-        <!-- CTA Section -->
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to Enroll?</h2>
-                <p>Take the first step toward your new skills and career opportunities.</p>
-                <div class="cta-buttons">
-                    <button class="btn-apply" id="Apply">Apply Now</button>
-                    <button class="btn-contact" id="contact">Contact an Advisor</button>
-                </div>
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <img
+                src="_images/week/calicon.png"
+                alt="Flexible Scheduling"
+                class="feature-icon-img"
+              />
+              <h3>Flexible Scheduling</h3>
+              <p>
+                Choose from morning, afternoon, or evening classes to fit your
+                busy lifestyle (weekend options also available).
+              </p>
             </div>
-        </section>
+            <div class="feature-card">
+              <img
+                src="_images/week/handshakeicon.png"
+                alt="Job Placement"
+                class="feature-icon-img"
+              />
+              <h3>Job Placement Assistance</h3>
+              <p>
+                Access to our network of employers and job placement support
+                after successful course completion.
+              </p>
+            </div>
+            <div class="feature-card">
+              <img
+                src="_images/week/dollaricon.png"
+                alt="Affordable Pricing"
+                class="feature-icon-img"
+              />
+              <h3>Affordable Pricing</h3>
+              <p>
+                Competitive course fees with payment plans available to make
+                learning accessible and easy for qualifying students.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Courses Section -->
+      <section class="other-courses">
+        <div class="container">
+          <h2>Explore Our Other Course Options</h2>
+          <p class="section-subtitle">
+            Looking for more comprehensive training? Check out our longer-term
+            programs.
+          </p>
+          <div class="other-courses-grid">
+            <div class="other-course-card">
+              <img
+                src="_images/week/staricon.png"
+                alt="6-Month Courses"
+                class="other-course-icon-img"
+              />
+              <h3>6-Month Courses</h3>
+              <p>
+                In-depth training programs including First Aid, Sewing,
+                Landscaping, and Life Skills.
+              </p>
+              <button class="btn-learn" id="months">Learn More</button>
+            </div>
+            <div class="other-course-card">
+              <img
+                src="_images/week/homeicon.png"
+                alt="Back to Home"
+                class="other-course-icon-img"
+              />
+              <h3>Back to Home</h3>
+              <p>
+                Return to our main page to explore all the opportunities
+                Empowering the Nation offers.
+              </p>
+              <button class="btn-visit" id="home">Visit Home</button>
+            </div>
+            <div class="other-course-card">
+              <img
+                src="_images/week/calcicon.png"
+                alt="Cost Calculator"
+                class="other-course-icon-img"
+              />
+              <h3>Cost Calculator</h3>
+              <p>
+                Use our interactive tools to calculate course fees and explore
+                payment options.
+              </p>
+              <button class="btn-calculate-alt" id="calc">Calculate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2>Ready to Enroll?</h2>
+          <p>
+            Take the first step toward your new skills and career opportunities.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn-apply-now" id="Apply">Apply Now</button>
+            <button class="btn-contact" id="contact">Contact an Advisor</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
