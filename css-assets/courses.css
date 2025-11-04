@@ -168,7 +168,8 @@ body {
 }
 
 .hero p,
-.hero-description {
+.hero-description,
+.subtitle {
   max-width: 800px;
   margin: 0 auto;
   color: #2c5f5f;
@@ -177,12 +178,14 @@ body {
 }
 
 /* Courses Section */
-.courses {
+.courses,
+.courses-section {
   padding: 60px 0;
   background-color: #d4f1f1;
 }
 
-.courses-grid {
+.courses-grid,
+.course-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -193,11 +196,12 @@ body {
 .course-card {
   background-color: white;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
 }
 
 .course-card:hover {
@@ -225,6 +229,58 @@ body {
   flex-grow: 1;
 }
 
+/* Styles specifically for 6-month courses page */
+.course-card > .course-header {
+  padding: 25px 25px 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.course-card > .course-header h3 {
+  color: #0f5a52;
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+  margin: 0;
+}
+
+.course-card > .course-meta {
+  padding: 0 25px 15px 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.course-card > .course-meta .days,
+.course-card > .course-meta .prereq {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.course-card > .course-meta .days::before {
+  content: "⏱";
+  font-size: 16px;
+}
+
+.course-card > .course-meta .prereq::before {
+  content: "👤";
+  font-size: 16px;
+}
+
+.course-card > .course-description {
+  padding: 0 25px 20px 25px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
 .course-header {
   display: flex;
   justify-content: space-between;
@@ -232,6 +288,7 @@ body {
   margin-bottom: 15px;
 }
 
+.course-header h2,
 .course-header h3 {
   color: #0f5a52;
   font-size: 20px;
@@ -239,7 +296,8 @@ body {
   flex: 1;
 }
 
-.course-duration {
+.course-duration,
+.duration {
   background-color: #d4f1f1;
   padding: 6px 14px;
   border-radius: 15px;
@@ -259,11 +317,16 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
 }
 
 .info-item,
 .course-days,
-.course-level {
+.course-level,
+.days,
+.prereq {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -278,11 +341,79 @@ body {
   flex-shrink: 0;
 }
 
+.course-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.course-content h3,
+.course-content h4 {
+  font-size: 16px;
+  color: #0f5a52;
+  margin: 20px 0 10px;
+}
+
+.course-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.outcomes-list,
+.info-list {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.outcomes-list li,
+.info-list li {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+  padding-left: 5px;
+}
+
+/* Specific styling for 6-month courses info list */
+.course-card h4 {
+  font-size: 16px;
+  color: #0f5a52;
+  margin: 0 0 15px 0;
+  padding: 0 25px;
+  font-weight: 600;
+}
+
+.course-card .info-list {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0 25px;
+}
+
+.course-card .info-list li {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.course-card .info-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0f5a52;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .course-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 25px 25px 25px;
   border-top: 1px solid #e0e0e0;
   margin-top: auto;
 }
@@ -291,20 +422,20 @@ body {
 .course-price {
   display: flex;
   flex-direction: column;
-}
-
-.amount,
-.course-price {
   font-size: 24px;
   font-weight: 700;
   color: #c89b3c;
 }
 
+.price span,
+.amount,
 .price-note,
-.course-note {
+.course-note,
+.tax {
   font-size: 12px;
   color: #999;
   margin-top: 4px;
+  font-weight: normal;
 }
 
 .btn-calculate,
@@ -337,24 +468,28 @@ body {
   padding: 0 20px;
 }
 
-.why-choose-content {
+.why-choose-content,
+.why-content {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.why-choose-text h2 {
+.why-choose-text h2,
+.why-text h2 {
   color: #0f5a52;
   font-size: 32px;
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-.why-choose-text p {
+.why-choose-text p,
+.why-text p {
   color: #0f5a52;
   margin-bottom: 25px;
   line-height: 1.7;
+  font-size: 16px;
 }
 
 .benefits-list,
@@ -430,6 +565,20 @@ body {
   border-radius: 0 !important;
 }
 
+.why-image {
+  background-color: #2c5f4f;
+  border-radius: 12px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pen-icon {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Features Section */
 .features {
   padding: 60px 0;
@@ -453,6 +602,11 @@ body {
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
 }
 
 .feature-icon-img {
@@ -517,13 +671,15 @@ body {
 }
 
 /* Other Courses Section */
-.other-courses {
+.other-courses,
+.other-options {
   padding: 60px 0;
   background-color: #6fc4bd;
   text-align: center;
 }
 
-.other-courses h2 {
+.other-courses h2,
+.other-options h2 {
   font-size: 32px;
   color: #0f5a52;
   margin-bottom: 10px;
@@ -536,40 +692,47 @@ body {
   font-size: 16px;
 }
 
-.other-courses-grid {
+.other-courses-grid,
+.options-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.other-course-card {
+.other-course-card,
+.option-card {
   background-color: white;
   padding: 40px 30px;
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.other-course-card:hover {
+.other-course-card:hover,
+.option-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.other-course-icon-img {
+.other-course-icon-img,
+.option-icon {
   width: 64px;
   height: 64px;
   object-fit: contain;
   margin: 0 auto 20px;
   display: block;
+  font-size: 50px;
 }
 
-.other-course-card h3 {
+.other-course-card h3,
+.option-card h3 {
   color: #0f5a52;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.other-course-card p {
+.other-course-card p,
+.option-card p {
   color: #666;
   margin-bottom: 25px;
   font-size: 14px;
@@ -654,6 +817,7 @@ body {
 }
 
 .btn-apply-now,
+.btn-apply,
 .btn-contact,
 .btn-cta {
   padding: 14px 32px;
@@ -666,12 +830,14 @@ body {
 }
 
 .btn-apply-now,
+.btn-apply,
 .btn-cta {
   background-color: #0f5a52;
   color: white;
 }
 
 .btn-apply-now:hover,
+.btn-apply:hover,
 .btn-cta:hover {
   background-color: #0d4841;
 }
@@ -769,11 +935,13 @@ body {
   gap: 12px;
   margin-top: 20px;
 }
+
 .social-icon img {
   width: 20px;
   height: 20px;
   display: block;
 }
+
 .social-icon {
   width: 38px;
   height: 38px;
@@ -817,6 +985,7 @@ body {
   opacity: 0.9;
   margin-bottom: 5px;
 }
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 30px;
@@ -846,11 +1015,13 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .courses-grid {
+  .courses-grid,
+  .course-grid {
     grid-template-columns: 1fr;
   }
 
   .why-choose-content,
+  .why-content,
   .cta-content {
     grid-template-columns: 1fr;
   }
@@ -859,7 +1030,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .other-courses-grid {
+  .other-courses-grid,
+  .options-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -878,7 +1050,8 @@ body {
   }
 
   .features-grid,
-  .other-courses-grid {
+  .other-courses-grid,
+  .options-grid {
     grid-template-columns: 1fr;
   }
 
@@ -903,6 +1076,7 @@ body {
   }
 
   .btn-apply-now,
+  .btn-apply,
   .btn-contact,
   .btn-cta {
     width: 100%;
