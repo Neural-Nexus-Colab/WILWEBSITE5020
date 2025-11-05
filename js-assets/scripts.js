@@ -145,13 +145,17 @@ document.addEventListener("DOMContentLoaded", function () {
   ///---6 month courses Navigation
   ///---Course cards
   const ViewL = document.getElementById("ViewL");
+  const firstaid = document.getElementById("firstaid");
   const ViewP = document.getElementById("ViewP");
+  const sewing = document.getElementById("sewing");
+  const life = document.getElementById("life");
+  const landscaping = document.getElementById("landscaping");
   const ViewF = document.getElementById("ViewF");
   const ViewS = document.getElementById("ViewS");
 
   if (ViewL) {
     ViewL.addEventListener("click", function () {
-      Navigate("detailedmonthcourses.html");
+      Navigate("detailedmonthcourses.html#life");
     });
   }
 
