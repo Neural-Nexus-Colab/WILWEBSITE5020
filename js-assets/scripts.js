@@ -211,6 +211,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   ///---End of detailed 6 week courses Navigation
+  ///---Signup nav
+signup.location.href = "login.html";
+
+if (signup) {
+  signup.addEventListener("click", function (){
+    Navigate("login.html");
+  });
+}
+///---End of signup nav
+
+///---login nav
+
+login.location.href = "signup.html"
+
+if (login){
+  login.addEventListener("click", function (){
+    Navigate("signup.html");
+  });
+}
 
   /// Registration Form Validation
   // Get all checkboxes
