@@ -259,13 +259,16 @@ body {
 }
 
 .btn-submit {
-  background-color: var(--secondary-color);
-  color: var(--white);
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
+  background-color: #c9a940;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
   width: 100%;
-  border-radius: var(--radius);
 }
 
 .btn-submit:hover {

@@ -372,12 +372,13 @@ main {
 }
 
 .btn-submit {
-  background-color: #0f5a52;
+  background-color: #c9a940;
   color: white;
 }
 
+
 .btn-submit:hover {
-  background-color: #0d4a44;
+  background-color: #9c8436;
 }
 
 .btn-clear {
@@ -484,19 +485,6 @@ main {
 
 .btn-help:hover {
   background-color: rgba(255, 255, 255, 0.25);
-}
-
-.btn-calculate {
-  background-color: #c9a940;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
 }
 
 .btn-calculate:hover {
