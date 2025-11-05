@@ -552,6 +552,19 @@ body {
 .footer-links a:hover {
   color: white;
 }
+/* Form Validation Error Styles */
+.form-input.error {
+  border-color: #dc3545 !important;
+  background-color: #fff5f5 !important;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

@@ -446,7 +446,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (clearBtn) {
       clearBtn.addEventListener("click", function () {
         setTimeout(() => {
+          
+           Array.from(checkboxes).forEach((box) => {
+            box.checked = false;
+          });
           updateCosts();
+ 
         }, 10);
       });
     }
