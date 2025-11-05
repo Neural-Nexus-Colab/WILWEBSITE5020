@@ -1,4 +1,72 @@
-// Wait for page to fully load before running ANY script
+// ============================================================================
+// AUTHENTICATION FUNCTIONS - MUST BE GLOBAL FOR onclick ATTRIBUTES
+// ============================================================================
+
+// This boolean variable tracks which mode we're currently in
+// true = Login mode is showing
+// false = Signup mode is showing
+// We start with login mode (true) by default
+let isLoginMode = true;
+
+/**
+ * toggleAuthMode()
+ * This is the main function that switches between Login and Signup modes
+ * It's called when the user clicks the button on the green sliding panel
+ */
+function toggleAuthMode() {
+  const container = document.getElementById("authContainer");
+  const welcomeTitle = document.getElementById("welcomeTitle");
+  const welcomeText = document.getElementById("welcomeText");
+  const panelBtn = document.getElementById("panelToggleBtn");
+
+  // Check if elements exist (in case we're not on the auth page)
+  if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
+    return;
+  }
+
+  if (isLoginMode) {
+    // Switch to signup mode
+    container.classList.add("signup-mode");
+    welcomeTitle.textContent = "Welcome Back!";
+    welcomeText.textContent = "To keep connected with us please login with your personal info";
+    panelBtn.textContent = "Sign In";
+    isLoginMode = false;
+  } else {
+    // Switch to login mode
+    container.classList.remove("signup-mode");
+    welcomeTitle.textContent = "Hello, Friend!";
+    welcomeText.textContent = "Register with your personal details to use all of site features";
+    panelBtn.textContent = "Sign Up";
+    isLoginMode = true;
+  }
+}
+
+/**
+ * showLogin()
+ * This function ensures we're in Login mode
+ * Called when user clicks the "Login" button in the navigation bar
+ */
+function showLogin() {
+  if (!isLoginMode) {
+    toggleAuthMode();
+  }
+}
+
+/**
+ * showSignup()
+ * This function ensures we're in Signup mode
+ * Called when user clicks the "Sign Up" button in the navigation bar
+ */
+function showSignup() {
+  if (isLoginMode) {
+    toggleAuthMode();
+  }
+}
+// ============================================================================
+// ALL OTHER CODE - WRAPPED IN DOMContentLoaded
+// ============================================================================
+
+// Wait for page to fully load before running script
 document.addEventListener("DOMContentLoaded", function () {
   //Navigation Section
   function Navigate(pageUrl) {
@@ -8,17 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
   ///--Home page navigation
   //---Sign up and Login Navigation
   const navSignup = document.getElementById("navSignup");
-  const navLogin = document.getElementById("navLogin");
 
   if (navSignup) {
     navSignup.addEventListener("click", function () {
-      Navigate("signup.html");
-    });
-  }
-
-  if (navLogin) {
-    navLogin.addEventListener("click", function () {
-      Navigate("login.html");
+      Navigate("/login/signuplogin.html");
     });
   }
 
@@ -215,25 +276,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   ///---End of detailed 6 week courses Navigation
-  ///---Signup nav
-signup.location.href = "login.html";
-
-if (signup) {
-  signup.addEventListener("click", function (){
-    Navigate("login.html");
-  });
-}
-///---End of signup nav
-
-///---login nav
-
-login.location.href = "signup.html"
-
-if (login){
-  login.addEventListener("click", function (){
-    Navigate("signup.html");
-  });
-}
 
   /// Registration Form Validation
   // Get all checkboxes
