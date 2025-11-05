@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login / Sign Up - Empowering the Nation</title>
-<link rel="stylesheet" href="/css-assets/loginsignup.css">
+    <link rel="stylesheet" href="/css-assets/loginsignup.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -28,7 +28,7 @@
           <li><a href="/registercourse.html">Register</a></li>
         </ul>
         <div class="auth-buttons">
-         <button class="btn-signup" id="navSignup">Login/Signup</button>
+          <button class="btn-signup" id="navSignup">Login/Signup</button>
         </div>
       </div>
     </nav>
@@ -44,7 +44,11 @@
               <p id="welcomeText">
                 Register with your personal details to use all of site features
               </p>
-              <button class="panel-btn" id="panelToggleBtn" onclick="toggleAuthMode()">
+              <button
+                class="panel-btn"
+                id="panelToggleBtn"
+                onclick="toggleAuthMode()"
+              >
                 Sign Up
               </button>
             </div>
@@ -53,7 +57,6 @@
 
         <!-- Form Container - holds both forms -->
         <div class="form-container">
-          
           <!-- LOGIN FORM - Right Side Initially -->
           <div class="form-panel login-form">
             <h2>Sign In</h2>
@@ -170,7 +173,6 @@
               <button type="submit" class="btn-submit">Sign Up</button>
             </form>
           </div>
-          
         </div>
       </div>
     </main>
@@ -185,17 +187,29 @@
             Join us on a journey to empower yourself and your community.
           </p>
           <div class="social-icons">
-            <a href="" class="social-icon">
-              <img src="/_images/footer/facebook.png" alt="Facebook icon" />
+            <a
+              href="https://www.facebook.com/share/19sNFb2mAy/"
+              class="social-icon"
+            >
+              <img src="_images/footer/facebook.png" alt="Facebook icon" />
             </a>
-            <a href="" class="social-icon">
-              <img src="/_images/footer/twitter.png" alt="Twitter icon" />
+            <a
+              href="https://x.com/nadine40576?t=4_N0No0V4f07bk92_zUVSA&s=08"
+              class="social-icon"
+            >
+              <img src="_images//footer/twitter.png" alt="Twitter icon" />
             </a>
-            <a href="https://www.instagram.com/emp.oweringthenation?utm_source=qr&igsh=dGdvYXk1dDgwbnhw" class="social-icon">
-              <img src="/_images/footer/instagram.png" alt="Instagram icon" />
+            <a
+              href="https://www.instagram.com/emp.oweringthenation?utm_source=qr&igsh=dGdvYXk1dDgwbnhw"
+              class="social-icon"
+            >
+              <img src="_images/footer/instagram.png" alt="Instagram icon" />
             </a>
-            <a href="" class="social-icon">
-              <img src="/_images/footer/linkedin.png" alt="LinkedIn icon" />
+            <a
+              href="https://youtube.com/@empoweringthenation-2022?si=ovsPlC9VIbI1_Odm"
+              class="social-icon"
+            >
+              <img src="_images/footer/youtubeicon.png" alt="Youtube icon" />
             </a>
           </div>
         </div>
@@ -290,34 +304,36 @@
     </footer>
 
     <script>
-let isLoginMode = true;
+      let isLoginMode = true;
 
-function toggleAuthMode() {
-  const container = document.getElementById("authContainer");
-  const welcomeTitle = document.getElementById("welcomeTitle");
-  const welcomeText = document.getElementById("welcomeText");
-  const panelBtn = document.getElementById("panelToggleBtn");
+      function toggleAuthMode() {
+        const container = document.getElementById("authContainer");
+        const welcomeTitle = document.getElementById("welcomeTitle");
+        const welcomeText = document.getElementById("welcomeText");
+        const panelBtn = document.getElementById("panelToggleBtn");
 
-  if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
-    return;
-  }
+        if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
+          return;
+        }
 
-  if (isLoginMode) {
-    // Switch to signup mode
-    container.classList.add("signup-mode");
-    welcomeTitle.textContent = "Welcome Back!";
-    welcomeText.textContent = "To keep connected with us please login with your personal info";
-    panelBtn.textContent = "Sign In";
-    isLoginMode = false;
-  } else {
-    // Switch to login mode
-    container.classList.remove("signup-mode");
-    welcomeTitle.textContent = "Hello, Friend!";
-    welcomeText.textContent = "Register with your personal details to use all of site features";
-    panelBtn.textContent = "Sign Up";
-    isLoginMode = true;
-  }
-}
+        if (isLoginMode) {
+          // Switch to signup mode
+          container.classList.add("signup-mode");
+          welcomeTitle.textContent = "Welcome Back!";
+          welcomeText.textContent =
+            "To keep connected with us please login with your personal info";
+          panelBtn.textContent = "Sign In";
+          isLoginMode = false;
+        } else {
+          // Switch to login mode
+          container.classList.remove("signup-mode");
+          welcomeTitle.textContent = "Hello, Friend!";
+          welcomeText.textContent =
+            "Register with your personal details to use all of site features";
+          panelBtn.textContent = "Sign Up";
+          isLoginMode = true;
+        }
+      }
     </script>
   </body>
 </html>

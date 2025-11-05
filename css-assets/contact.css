@@ -402,10 +402,13 @@ body {
   margin-bottom: 2rem;
 }
 
-.social-links {
+/* Social icons - works for both main section and footer */
+.social-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .social-icon {
@@ -414,19 +417,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
+  background-color: white;
   border-radius: 50%;
-  color: var(--primary-color);
   text-decoration: none;
-  font-weight: bold;
   transition: all 0.3s ease;
-  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.social-icon:hover {
+.social-section .social-icon:hover {
   background-color: var(--primary-color);
-  color: var(--white);
   transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
 }
 
 /* Footer */
@@ -476,32 +484,25 @@ body {
   color: white;
 }
 
-.social-icons {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-.social-icon img {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-.social-icon {
-  width: 38px;
-  height: 38px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
+/* Footer social icons styling */
+.footer .social-icons {
+  justify-content: flex-start;
 }
 
-.social-icon:hover {
+.footer .social-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+}
+
+.footer .social-icon:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  transform: none;
+}
+
+.footer .social-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Footer Contact Info Styling */
@@ -529,6 +530,7 @@ body {
   opacity: 0.9;
   margin-bottom: 5px;
 }
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 30px;
@@ -569,11 +571,19 @@ body {
   .calculator-content {
     grid-template-columns: 1fr;
   }
+
+  .contact-form-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
   }
 
   .mission-cards {
@@ -595,5 +605,13 @@ body {
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons {
+    gap: 12px;
   }
 }
