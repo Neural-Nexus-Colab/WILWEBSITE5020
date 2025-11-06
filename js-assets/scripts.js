@@ -1,71 +1,33 @@
-// ============================================================================
-// AUTHENTICATION FUNCTIONS - MUST BE GLOBAL FOR onclick ATTRIBUTES
-// ============================================================================
+      let isLoginMode = true;
 
-// This boolean variable tracks which mode we're currently in
-// true = Login mode is showing
-// false = Signup mode is showing
-// We start with login mode (true) by default
-let isLoginMode = true;
+      function toggleAuthMode() {
+        const container = document.getElementById("authContainer");
+        const welcomeTitle = document.getElementById("welcomeTitle");
+        const welcomeText = document.getElementById("welcomeText");
+        const panelBtn = document.getElementById("panelToggleBtn");
 
-/**
- * toggleAuthMode()
- * This is the main function that switches between Login and Signup modes
- * It's called when the user clicks the button on the green sliding panel
- */
-function toggleAuthMode() {
-  const container = document.getElementById("authContainer");
-  const welcomeTitle = document.getElementById("welcomeTitle");
-  const welcomeText = document.getElementById("welcomeText");
-  const panelBtn = document.getElementById("panelToggleBtn");
+        if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
+          return;
+        }
 
-  // Check if elements exist (in case we're not on the auth page)
-  if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
-    return;
-  }
-
-  if (isLoginMode) {
-    // Switch to signup mode
-    container.classList.add("signup-mode");
-    welcomeTitle.textContent = "Welcome Back!";
-    welcomeText.textContent = "To keep connected with us please login with your personal info";
-    panelBtn.textContent = "Sign In";
-    isLoginMode = false;
-  } else {
-    // Switch to login mode
-    container.classList.remove("signup-mode");
-    welcomeTitle.textContent = "Hello, Friend!";
-    welcomeText.textContent = "Register with your personal details to use all of site features";
-    panelBtn.textContent = "Sign Up";
-    isLoginMode = true;
-  }
-}
-
-/**
- * showLogin()
- * This function ensures we're in Login mode
- * Called when user clicks the "Login" button in the navigation bar
- */
-function showLogin() {
-  if (!isLoginMode) {
-    toggleAuthMode();
-  }
-}
-
-/**
- * showSignup()
- * This function ensures we're in Signup mode
- * Called when user clicks the "Sign Up" button in the navigation bar
- */
-function showSignup() {
-  if (isLoginMode) {
-    toggleAuthMode();
-  }
-}
-// ============================================================================
-// ALL OTHER CODE - WRAPPED IN DOMContentLoaded
-// ============================================================================
-
+        if (isLoginMode) {
+          // Switch to signup mode
+          container.classList.add("signup-mode");
+          welcomeTitle.textContent = "Welcome Back!";
+          welcomeText.textContent =
+            "To keep connected with us please login with your personal info";
+          panelBtn.textContent = "Sign In";
+          isLoginMode = false;
+        } else {
+          // Switch to login mode
+          container.classList.remove("signup-mode");
+          welcomeTitle.textContent = "Hello, User!";
+          welcomeText.textContent =
+            "Register with your personal details to use all of site features";
+          panelBtn.textContent = "Sign Up";
+          isLoginMode = true;
+        }
+      }
 // Wait for page to fully load before running script
 document.addEventListener("DOMContentLoaded", function () {
   //Navigation Section
@@ -174,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (Apply) {
     Apply.addEventListener("click", function () {
-      Navigate("signup.html");
+      Navigate("/login/signuplogin.html");
     });
   }
   ///---End of 6 week courses Navigation

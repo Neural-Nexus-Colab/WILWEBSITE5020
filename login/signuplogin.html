@@ -303,37 +303,7 @@
       </div>
     </footer>
 
-    <script>
-      let isLoginMode = true;
-
-      function toggleAuthMode() {
-        const container = document.getElementById("authContainer");
-        const welcomeTitle = document.getElementById("welcomeTitle");
-        const welcomeText = document.getElementById("welcomeText");
-        const panelBtn = document.getElementById("panelToggleBtn");
-
-        if (!container || !welcomeTitle || !welcomeText || !panelBtn) {
-          return;
-        }
-
-        if (isLoginMode) {
-          // Switch to signup mode
-          container.classList.add("signup-mode");
-          welcomeTitle.textContent = "Welcome Back!";
-          welcomeText.textContent =
-            "To keep connected with us please login with your personal info";
-          panelBtn.textContent = "Sign In";
-          isLoginMode = false;
-        } else {
-          // Switch to login mode
-          container.classList.remove("signup-mode");
-          welcomeTitle.textContent = "Hello, Friend!";
-          welcomeText.textContent =
-            "Register with your personal details to use all of site features";
-          panelBtn.textContent = "Sign Up";
-          isLoginMode = true;
-        }
-      }
+    <script src="/js-assets/scripts.js">
     </script>
   </body>
 </html>
