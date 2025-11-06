@@ -427,4 +427,94 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize on page load
     updateCosts();
   }
-}); // End of DOMContentLoaded
+});
+// contact page nav 
+ // Form submission with validation
+    const contactForm = document.querySelector(".contact-form");
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const firstname = document.getElementById("firstname").value.trim();
+        const lastname = document.getElementById("lastname").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Check if courses selected FIRST
+        const selected = Array.from(checkboxes).filter((box) => box.checked);
+        if (selected.length === 0) {
+          return;
+        }
+
+        // Validate all contact information fields
+        if (!fullname) {
+          alert("Please enter your first name.");
+          document.getElementById("firstname").focus();
+          return;
+        }
+
+        if (!lastname) {
+          alert("Please enter your last name.");
+          document.getElementById("lastname").focus();
+          return;
+        }
+
+        if (!phone) {
+          alert("Please enter your phone number.");
+          document.getElementById("phone").focus();
+          return;
+        }
+
+        if (!subject) {
+          alert("Please enter your ID number.");
+          document.getElementById("subject").focus();
+          return;
+        }
+
+        if (!email) {
+          alert("Please enter your email address.");
+          document.getElementById("email").focus();
+          return;
+        }
+
+        if (!message) {
+          alert("Please enter your inquiry.");
+          document.getElementById("message").focus();
+          return;
+        }      
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          document.getElementById("email").focus();
+          return;
+        }
+
+        
+
+        // Get course names for confirmation
+        const Newsletter = selected
+          .map((box) => {
+            const label = box.parentElement.querySelector("span").textContent;
+            return label;
+          })
+          .join("\n");
+
+        // Success message
+        alert(
+          `Information Sent Successful!\n\n` +
+            `fullname: ${fullname}\n` +
+             `lastname: ${lastname}\n`+
+            `Email: ${email}\n\n` +
+            `Phone: ${phone}\n\n` +
+            `Subject ${subject}\n` +
+            `Message: ${message}\n`+
+            `Thank you for your inquiry!`
+        );
+      });
+    }
+// End of DOMContentLoaded
