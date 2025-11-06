@@ -430,39 +430,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // contact page nav 
  // Form submission with validation
-    const contactForm = document.querySelector(".contact-form");
-    if (contactForm) {
-      contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+    const contactFormC = document.querySelector(".contact-formC");
+    if (contactFormC) {
+      contactFormC.addEventListener("Submit", function (e) {
+      e.preventDefault();  
 
         // Get form values
-        const firstname = document.getElementById("firstname").value.trim();
-        const lastname = document.getElementById("lastname").value.trim();
-        const phone = document.getElementById("phone").value.trim();
+        const firstname = document.getElementById("firstName").value.trim();
+        const lastname = document.getElementById("lastName").value.trim();
+        const phoneC = document.getElementById("phone").value.trim();
         const subject = document.getElementById("subject").value.trim();
-        const email = document.getElementById("email").value.trim();
+        const emailC = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        // Check if courses selected FIRST
-        const selected = Array.from(checkboxes).filter((box) => box.checked);
-        if (selected.length === 0) {
-          return;
-        }
+        
 
         // Validate all contact information fields
-        if (!fullname) {
+        if (!firstname) {
           alert("Please enter your first name.");
-          document.getElementById("firstname").focus();
+          document.getElementById("firstName").focus();
           return;
         }
 
         if (!lastname) {
           alert("Please enter your last name.");
-          document.getElementById("lastname").focus();
+          document.getElementById("lastName").focus();
           return;
         }
 
-        if (!phone) {
+        if (!phoneC) {
           alert("Please enter your phone number.");
           document.getElementById("phone").focus();
           return;
@@ -474,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        if (!email) {
+        if (!emailC) {
           alert("Please enter your email address.");
           document.getElementById("email").focus();
           return;
@@ -488,31 +484,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
+        if (!emailRegex.test(emailC)) {
           alert("Please enter a valid email address.");
           document.getElementById("email").focus();
           return;
         }
-
-        
-
-        // Get course names for confirmation
-        const Newsletter = selected
-          .map((box) => {
-            const label = box.parentElement.querySelector("span").textContent;
-            return label;
-          })
-          .join("\n");
-
         // Success message
         alert(
           `Information Sent Successful!\n\n` +
-            `fullname: ${fullname}\n` +
-             `lastname: ${lastname}\n`+
-            `Email: ${email}\n\n` +
-            `Phone: ${phone}\n\n` +
-            `Subject ${subject}\n` +
-            `Message: ${message}\n`+
+            `fullname: ${fullName}\n` +
+             `lastname: ${lastName}\n`+
+            `Email: ${emailC}\n\n` +
+            `phone: ${phoneC}\n\n` +
+            `subject ${subject}\n` +
+            `message: ${message}\n`+
             `Thank you for your inquiry!`
         );
       });
